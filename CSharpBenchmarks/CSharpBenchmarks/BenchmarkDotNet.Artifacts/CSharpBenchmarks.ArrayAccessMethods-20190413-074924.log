@@ -1,0 +1,799 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 10 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3
+// command took 1,95s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3
+// command took 3s and exited with 0
+// ***** Done, took 00:00:05 (5.11 sec)   *****
+// Found 10 benchmarks:
+//   ArrayAccessMethods.ForCacheArray: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+//   ArrayAccessMethods.For: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+//   ArrayAccessMethods.ForEach: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+//   ArrayAccessMethods.LinqAggregate: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+//   ArrayAccessMethods.LinqSum: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+//   ArrayAccessMethods.ForCacheArray: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+//   ArrayAccessMethods.For: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+//   ArrayAccessMethods.ForEach: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+//   ArrayAccessMethods.LinqAggregate: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+//   ArrayAccessMethods.LinqSum: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)// **************************
+// Benchmark: ArrayAccessMethods.ForCacheArray: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.ForCacheArray(N: 1000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 0 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-CAPXEU(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 365600.00 ns, 365.6000 us/op
+WorkloadJitting  1: 1 op, 330800.00 ns, 330.8000 us/op
+
+OverheadWarmup   1: 1 op, 5400.00 ns, 5.4000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   7: 1 op, 400.00 ns, 400.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  10: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  11: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  12: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  13: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  14: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  15: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  16: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 300.00 ns, 300.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 6500.00 ns, 6.5000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3600.00 ns, 3.6000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3400.00 ns, 3.4000 us/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 3.4000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 3.4000 us, Q1 = 3.4000 us, Median = 3.4000 us, Q3 = 3.4000 us, Max = 3.4000 us
+IQR = 0.0000 us, LowerFence = 3.4000 us, UpperFence = 3.4000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ArrayAccessMethods.For: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.For(N: 1000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 1 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-RCUJLG(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 354700.00 ns, 354.7000 us/op
+WorkloadJitting  1: 1 op, 363500.00 ns, 363.5000 us/op
+
+OverheadWarmup   1: 1 op, 3800.00 ns, 3.8000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 300.00 ns, 300.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   8: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   9: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  13: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  14: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  15: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  16: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  17: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  18: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  19: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  20: 1 op, 300.00 ns, 300.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 5500.00 ns, 5.5000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 900.00 ns, 900.0000 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 600.00 ns, 600.0000 ns/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 600.0000 ns, StdErr = 0.0000 ns (0.00%); N = 1, StdDev = 0.0000 ns
+Min = 600.0000 ns, Q1 = 600.0000 ns, Median = 600.0000 ns, Q3 = 600.0000 ns, Max = 600.0000 ns
+IQR = 0.0000 ns, LowerFence = 600.0000 ns, UpperFence = 600.0000 ns
+ConfidenceInterval = [NaN ns; NaN ns] (CI 99.9%), Margin = NaN ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ArrayAccessMethods.ForEach: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.ForEach(N: 1000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 2 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-UDGSRV(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 349800.00 ns, 349.8000 us/op
+WorkloadJitting  1: 1 op, 421500.00 ns, 421.5000 us/op
+
+OverheadWarmup   1: 1 op, 2900.00 ns, 2.9000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   4: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   8: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   8: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   9: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  10: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  11: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  12: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  13: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  16: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 1700.00 ns, 1.7000 us/op
+OverheadActual  19: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  20: 1 op, 1800.00 ns, 1.8000 us/op
+
+WorkloadWarmup   1: 1 op, 5700.00 ns, 5.7000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1100.00 ns, 1.1000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 800.00 ns, 800.0000 ns/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 800.0000 ns, StdErr = 0.0000 ns (0.00%); N = 1, StdDev = 0.0000 ns
+Min = 800.0000 ns, Q1 = 800.0000 ns, Median = 800.0000 ns, Q3 = 800.0000 ns, Max = 800.0000 ns
+IQR = 0.0000 ns, LowerFence = 800.0000 ns, UpperFence = 800.0000 ns
+ConfidenceInterval = [NaN ns; NaN ns] (CI 99.9%), Margin = NaN ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ArrayAccessMethods.LinqAggregate: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.LinqAggregate(N: 1000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 3 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-ZPELNL(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 381300.00 ns, 381.3000 us/op
+WorkloadJitting  1: 1 op, 1136900.00 ns, 1.1369 ms/op
+
+OverheadWarmup   1: 1 op, 4000.00 ns, 4.0000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   7: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  14: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  15: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  16: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 1800.00 ns, 1.8000 us/op
+OverheadActual  20: 1 op, 300.00 ns, 300.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 15600.00 ns, 15.6000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 16100.00 ns, 16.1000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 15800.00 ns, 15.8000 us/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 15.8000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 15.8000 us, Q1 = 15.8000 us, Median = 15.8000 us, Q3 = 15.8000 us, Max = 15.8000 us
+IQR = 0.0000 us, LowerFence = 15.8000 us, UpperFence = 15.8000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ArrayAccessMethods.LinqSum: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.LinqSum(N: 1000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 4 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-QDSXZW(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 342100.00 ns, 342.1000 us/op
+WorkloadJitting  1: 1 op, 1119100.00 ns, 1.1191 ms/op
+
+OverheadWarmup   1: 1 op, 3900.00 ns, 3.9000 us/op
+OverheadWarmup   2: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 1900.00 ns, 1.9000 us/op
+OverheadActual   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  19: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  20: 1 op, 300.00 ns, 300.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 15800.00 ns, 15.8000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 12200.00 ns, 12.2000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 11950.00 ns, 11.9500 us/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 11.9500 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 11.9500 us, Q1 = 11.9500 us, Median = 11.9500 us, Q3 = 11.9500 us, Max = 11.9500 us
+IQR = 0.0000 us, LowerFence = 11.9500 us, UpperFence = 11.9500 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ArrayAccessMethods.ForCacheArray: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.ForCacheArray(N: 10000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 5 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-REEVAR(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 350100.00 ns, 350.1000 us/op
+WorkloadJitting  1: 1 op, 341900.00 ns, 341.9000 us/op
+
+OverheadWarmup   1: 1 op, 4100.00 ns, 4.1000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 1700.00 ns, 1.7000 us/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   7: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   8: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   9: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  10: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  11: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  14: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  15: 1 op, 1800.00 ns, 1.8000 us/op
+OverheadActual  16: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 1900.00 ns, 1.9000 us/op
+
+WorkloadWarmup   1: 1 op, 4100.00 ns, 4.1000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1200.00 ns, 1.2000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 900.00 ns, 900.0000 ns/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 900.0000 ns, StdErr = 0.0000 ns (0.00%); N = 1, StdDev = 0.0000 ns
+Min = 900.0000 ns, Q1 = 900.0000 ns, Median = 900.0000 ns, Q3 = 900.0000 ns, Max = 900.0000 ns
+IQR = 0.0000 ns, LowerFence = 900.0000 ns, UpperFence = 900.0000 ns
+ConfidenceInterval = [NaN ns; NaN ns] (CI 99.9%), Margin = NaN ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ArrayAccessMethods.For: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.For(N: 10000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 6 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-TWQYOF(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 344400.00 ns, 344.4000 us/op
+WorkloadJitting  1: 1 op, 350300.00 ns, 350.3000 us/op
+
+OverheadWarmup   1: 1 op, 3900.00 ns, 3.9000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   6: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   7: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 1800.00 ns, 1.8000 us/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  15: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  16: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 6300.00 ns, 6.3000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3300.00 ns, 3.3000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3100.00 ns, 3.1000 us/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 3.1000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 3.1000 us, Q1 = 3.1000 us, Median = 3.1000 us, Q3 = 3.1000 us, Max = 3.1000 us
+IQR = 0.0000 us, LowerFence = 3.1000 us, UpperFence = 3.1000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ArrayAccessMethods.ForEach: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.ForEach(N: 10000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 7 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-UTQMIL(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 398100.00 ns, 398.1000 us/op
+WorkloadJitting  1: 1 op, 348200.00 ns, 348.2000 us/op
+
+OverheadWarmup   1: 1 op, 4600.00 ns, 4.6000 us/op
+OverheadWarmup   2: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   3: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   4: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   7: 1 op, 300.00 ns, 300.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   3: 1 op, 1700.00 ns, 1.7000 us/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   6: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   8: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   9: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  10: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  11: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  12: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 300.00 ns, 300.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 6800.00 ns, 6.8000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 2700.00 ns, 2.7000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 2400.00 ns, 2.4000 us/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 2.4000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 2.4000 us, Q1 = 2.4000 us, Median = 2.4000 us, Q3 = 2.4000 us, Max = 2.4000 us
+IQR = 0.0000 us, LowerFence = 2.4000 us, UpperFence = 2.4000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ArrayAccessMethods.LinqAggregate: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.LinqAggregate(N: 10000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 8 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-QMRKZW(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 368000.00 ns, 368.0000 us/op
+WorkloadJitting  1: 1 op, 1128000.00 ns, 1.1280 ms/op
+
+OverheadWarmup   1: 1 op, 3500.00 ns, 3.5000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   7: 1 op, 300.00 ns, 300.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   6: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   9: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  10: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  11: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  12: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  15: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  16: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  17: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 1800.00 ns, 1.8000 us/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 18400.00 ns, 18.4000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 14000.00 ns, 14.0000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 13700.00 ns, 13.7000 us/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 13.7000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 13.7000 us, Q1 = 13.7000 us, Median = 13.7000 us, Q3 = 13.7000 us, Max = 13.7000 us
+IQR = 0.0000 us, LowerFence = 13.7000 us, UpperFence = 13.7000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ArrayAccessMethods.LinqSum: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "a54a59f5-8587-4b6b-b386-90946957e9b3.dll" --benchmarkName "CSharpBenchmarks.ArrayAccessMethods.LinqSum(N: 10000)" --job "Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1" --benchmarkId 9 in E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\a54a59f5-8587-4b6b-b386-90946957e9b3\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-GCQTEX(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 345300.00 ns, 345.3000 us/op
+WorkloadJitting  1: 1 op, 1124700.00 ns, 1.1247 ms/op
+
+OverheadWarmup   1: 1 op, 4000.00 ns, 4.0000 us/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   8: 1 op, 300.00 ns, 300.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 1900.00 ns, 1.9000 us/op
+OverheadActual   3: 1 op, 1700.00 ns, 1.7000 us/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   8: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  12: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 1700.00 ns, 1.7000 us/op
+OverheadActual  15: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  16: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  19: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 15400.00 ns, 15.4000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 12900.00 ns, 12.9000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 12600.00 ns, 12.6000 us/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 12.6000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 12.6000 us, Q1 = 12.6000 us, Median = 12.6000 us, Q3 = 12.6000 us, Max = 12.6000 us
+IQR = 0.0000 us, LowerFence = 12.6000 us, UpperFence = 12.6000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\CSharpBenchmarks.ArrayAccessMethods-report.csv
+  BenchmarkDotNet.Artifacts\results\CSharpBenchmarks.ArrayAccessMethods-report-github.md
+  BenchmarkDotNet.Artifacts\results\CSharpBenchmarks.ArrayAccessMethods-report.html
+
+// * Detailed results *
+ArrayAccessMethods.ForCacheArray: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 3.4000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 3.4000 us, Q1 = 3.4000 us, Median = 3.4000 us, Q3 = 3.4000 us, Max = 3.4000 us
+IQR = 0.0000 us, LowerFence = 3.4000 us, UpperFence = 3.4000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[3.400 us ; 3.401 us) | @
+---------------------------------------------------
+
+ArrayAccessMethods.For: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 600.0000 ns, StdErr = 0.0000 ns (0.00%); N = 1, StdDev = 0.0000 ns
+Min = 600.0000 ns, Q1 = 600.0000 ns, Median = 600.0000 ns, Q3 = 600.0000 ns, Max = 600.0000 ns
+IQR = 0.0000 ns, LowerFence = 600.0000 ns, UpperFence = 600.0000 ns
+ConfidenceInterval = [NaN ns; NaN ns] (CI 99.9%), Margin = NaN ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[599.500 ns ; 600.500 ns) | @
+---------------------------------------------------
+
+ArrayAccessMethods.ForEach: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 800.0000 ns, StdErr = 0.0000 ns (0.00%); N = 1, StdDev = 0.0000 ns
+Min = 800.0000 ns, Q1 = 800.0000 ns, Median = 800.0000 ns, Q3 = 800.0000 ns, Max = 800.0000 ns
+IQR = 0.0000 ns, LowerFence = 800.0000 ns, UpperFence = 800.0000 ns
+ConfidenceInterval = [NaN ns; NaN ns] (CI 99.9%), Margin = NaN ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[799.500 ns ; 800.500 ns) | @
+---------------------------------------------------
+
+ArrayAccessMethods.LinqAggregate: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 15.8000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 15.8000 us, Q1 = 15.8000 us, Median = 15.8000 us, Q3 = 15.8000 us, Max = 15.8000 us
+IQR = 0.0000 us, LowerFence = 15.8000 us, UpperFence = 15.8000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[15.800 us ; 15.801 us) | @
+---------------------------------------------------
+
+ArrayAccessMethods.LinqSum: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=1000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 11.9500 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 11.9500 us, Q1 = 11.9500 us, Median = 11.9500 us, Q3 = 11.9500 us, Max = 11.9500 us
+IQR = 0.0000 us, LowerFence = 11.9500 us, UpperFence = 11.9500 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[11.950 us ; 11.951 us) | @
+---------------------------------------------------
+
+ArrayAccessMethods.ForCacheArray: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 900.0000 ns, StdErr = 0.0000 ns (0.00%); N = 1, StdDev = 0.0000 ns
+Min = 900.0000 ns, Q1 = 900.0000 ns, Median = 900.0000 ns, Q3 = 900.0000 ns, Max = 900.0000 ns
+IQR = 0.0000 ns, LowerFence = 900.0000 ns, UpperFence = 900.0000 ns
+ConfidenceInterval = [NaN ns; NaN ns] (CI 99.9%), Margin = NaN ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[899.500 ns ; 900.500 ns) | @
+---------------------------------------------------
+
+ArrayAccessMethods.For: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 3.1000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 3.1000 us, Q1 = 3.1000 us, Median = 3.1000 us, Q3 = 3.1000 us, Max = 3.1000 us
+IQR = 0.0000 us, LowerFence = 3.1000 us, UpperFence = 3.1000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[3.100 us ; 3.101 us) | @
+---------------------------------------------------
+
+ArrayAccessMethods.ForEach: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 2.4000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 2.4000 us, Q1 = 2.4000 us, Median = 2.4000 us, Q3 = 2.4000 us, Max = 2.4000 us
+IQR = 0.0000 us, LowerFence = 2.4000 us, UpperFence = 2.4000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[2.400 us ; 2.401 us) | @
+---------------------------------------------------
+
+ArrayAccessMethods.LinqAggregate: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 13.7000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 13.7000 us, Q1 = 13.7000 us, Median = 13.7000 us, Q3 = 13.7000 us, Max = 13.7000 us
+IQR = 0.0000 us, LowerFence = 13.7000 us, UpperFence = 13.7000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[13.700 us ; 13.701 us) | @
+---------------------------------------------------
+
+ArrayAccessMethods.LinqSum: Job-JYXJNE(Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1) [N=10000]
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 12.6000 us, StdErr = 0.0000 us (0.00%); N = 1, StdDev = 0.0000 us
+Min = 12.6000 us, Q1 = 12.6000 us, Median = 12.6000 us, Q3 = 12.6000 us, Max = 12.6000 us
+IQR = 0.0000 us, LowerFence = 12.6000 us, UpperFence = 12.6000 us
+ConfidenceInterval = [NaN us; NaN us] (CI 99.9%), Margin = NaN us (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[12.600 us ; 12.601 us) | @
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.11.5, OS=Windows 10.0.17134.706 (1803/April2018Update/Redstone4)
+Intel Core i7-5820K CPU 3.30GHz (Broadwell), 1 CPU, 12 logical and 6 physical cores
+.NET Core SDK=2.2.105
+  [Host]     : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+  Job-JYXJNE : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+
+Server=True  InvocationCount=1  IterationCount=1  
+LaunchCount=1  RunStrategy=Throughput  UnrollFactor=1  
+WarmupCount=1  
+
+|        Method |     N |        Mean | Error |
+|-------------- |------ |------------:|------:|
+| ForCacheArray |  1000 |  3,400.0 ns |    NA |
+|           For |  1000 |    600.0 ns |    NA |
+|       ForEach |  1000 |    800.0 ns |    NA |
+| LinqAggregate |  1000 | 15,800.0 ns |    NA |
+|       LinqSum |  1000 | 11,950.0 ns |    NA |
+| ForCacheArray | 10000 |    900.0 ns |    NA |
+|           For | 10000 |  3,100.0 ns |    NA |
+|       ForEach | 10000 |  2,400.0 ns |    NA |
+| LinqAggregate | 10000 | 13,700.0 ns |    NA |
+|       LinqSum | 10000 | 12,600.0 ns |    NA |
+
+// * Warnings *
+MinIterationTime
+  ArrayAccessMethods.ForCacheArray: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 3.6000 us which is very small. It's recommended to increase it.
+  ArrayAccessMethods.For: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1           -> The minimum observed iteration time is 900.0000 ns which is very small. It's recommended to increase it.
+  ArrayAccessMethods.ForEach: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1       -> The minimum observed iteration time is 1.1000 us which is very small. It's recommended to increase it.
+  ArrayAccessMethods.LinqAggregate: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 16.1000 us which is very small. It's recommended to increase it.
+  ArrayAccessMethods.LinqSum: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1       -> The minimum observed iteration time is 12.2000 us which is very small. It's recommended to increase it.
+  ArrayAccessMethods.ForCacheArray: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 1.2000 us which is very small. It's recommended to increase it.
+  ArrayAccessMethods.For: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1           -> The minimum observed iteration time is 3.3000 us which is very small. It's recommended to increase it.
+  ArrayAccessMethods.ForEach: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1       -> The minimum observed iteration time is 2.7000 us which is very small. It's recommended to increase it.
+  ArrayAccessMethods.LinqAggregate: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 14.0000 us which is very small. It's recommended to increase it.
+  ArrayAccessMethods.LinqSum: Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, RunStrategy=Throughput, UnrollFactor=1, WarmupCount=1       -> The minimum observed iteration time is 12.9000 us which is very small. It's recommended to increase it.
+
+// * Legends *
+  N     : Value of the 'N' parameter
+  Mean  : Arithmetic mean of all measurements
+  Error : Half of 99.9% confidence interval
+  1 ns  : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:05 (5.57 sec), executed benchmarks: 10
+
+Global total time: 00:00:10 (10.69 sec), executed benchmarks: 10
+// * Artifacts cleanup *

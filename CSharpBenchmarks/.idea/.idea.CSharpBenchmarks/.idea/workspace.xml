@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2b78a0c-2059-4bff-ac5d-aba8c41841f0" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2087882769">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="444" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="444" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <marker date="1555195414539" expanded="false" signature="6:202" ph="..." />
+                <marker date="1555195414539" expanded="true" signature="230:1157" ph="{...}" />
+                <marker date="1555195414539" expanded="true" signature="257:503" ph="{...}" />
+                <marker date="1555195414539" expanded="true" signature="297:497" ph="{...}" />
+                <marker date="1555195414539" expanded="true" signature="374:487" ph="/* BenchmarkRunner.Run&lt;Array2AccessMethods&gt;(); ... */" />
+                <marker date="1555195414539" expanded="true" signature="537:1155" ph="{...}" />
+                <marker date="1555195414539" expanded="true" signature="617:846" ph="{...}" />
+                <marker date="1555195414539" expanded="true" signature="676:810" ph="{...}" />
+                <marker date="1555195414539" expanded="true" signature="726:796" ph="{...}" />
+                <marker date="1555195414539" expanded="true" signature="921:1149" ph="{...}" />
+                <marker date="1555195414539" expanded="true" signature="980:1112" ph="{...}" />
+                <marker date="1555195414539" expanded="true" signature="1029:1098" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/IListAccessMethods.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="104" column="28" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+              <folding>
+                <marker date="1555195431653" expanded="false" signature="6:112" ph="..." />
+                <marker date="1555195431653" expanded="true" signature="140:3357" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="207:3355" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="293:710" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="386:699" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="442:553" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="574:685" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="761:782" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="818:887" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="960:1250" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="1136:1215" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="1296:1555" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="1441:1520" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="1605:1844" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="1737:1809" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="1900:2103" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="2153:2326" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="2377:2586" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="2641:2838" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="2889:3097" ph="{...}" />
+                <marker date="1555195431653" expanded="true" signature="3152:3349" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/ArrayAccessMethods.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="144" selection-start-line="144" selection-end-line="144" />
+              <folding>
+                <marker date="1555195439507" expanded="false" signature="6:86" ph="..." />
+                <marker date="1555195439507" expanded="true" signature="114:4488" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="212:4486" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="440:674" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="501:664" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="747:1022" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="920:987" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="1079:1354" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="1252:1319" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="1400:1644" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="1542:1609" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="1691:1936" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="1833:1901" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="1986:2225" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="2118:2190" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="2276:2516" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="2409:2481" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="2572:2775" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="2832:3036" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="3086:3259" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="3310:3484" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="3535:3732" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="3784:3982" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="4033:4230" ph="{...}" />
+                <marker date="1555195439507" expanded="true" signature="4282:4480" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/37B379B3-67CB-4B1F-8609-E00EED30209E/23/0275c0df/List`1.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="405" column="18" selection-start-line="405" selection-start-column="18" selection-end-line="405" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/ReflectionGetAndSetMethods.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1555185132144" expanded="false" signature="6:91" ph="..." />
+                <marker date="1555185132144" expanded="true" signature="205:1482" ph="{...}" />
+                <marker date="1555185132144" expanded="true" signature="243:296" ph="{...}" />
+                <marker date="1555185132144" expanded="true" signature="567:793" ph="{...}" />
+                <marker date="1555185132144" expanded="true" signature="869:1142" ph="{...}" />
+                <marker date="1555185132144" expanded="true" signature="1000:1107" ph="{...}" />
+                <marker date="1555185132144" expanded="true" signature="1198:1476" ph="{...}" />
+                <marker date="1555185132144" expanded="true" signature="1323:1441" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/Shared.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1555187022143" expanded="true" signature="52:174" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>select</find>
+      <find>_version</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8B65DBE5-458B-4D44-8CF3-C60F38D71B29/10/d71bfec6/BenchmarkRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/2c/1a844c53/MemberInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52D57F27-21D6-403B-B269-6DF28E1EBA0A/d5/75cac3f0/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/fa/041c2168/PropertyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/863B11AD-AFFF-4401-B5E2-892EBE2F2C9E/21/47db6ec5/DynamicMethod.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F25B43C-31E9-43FF-B8F7-C2B0B09EACA0/c3/a4bde3be/ImmutableArray`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/37B379B3-67CB-4B1F-8609-E00EED30209E/23/0275c0df/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/73/e5f6fcc2/MethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharpBenchmarks/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/Shared.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/ReflectionGetAndSetMethods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/ListAccessMethods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F25B43C-31E9-43FF-B8F7-C2B0B09EACA0/c6/d2573fc0/ImmutableArray.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/b4/4b6a2b81/ParameterInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/IListAccessMethods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/ArrayAccessMethods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/Array2AccessMethods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CA55E692-DA2C-4C8A-912D-364A352AAD35/58/66490300/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8B65DBE5-458B-4D44-8CF3-C60F38D71B29/98/c4441c45/EmitParameterInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/72/13dadd41/ICustomAttributeProvider.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CSharpBenchmarks/Md5VsSha256.cs" />
+        <option value="$PROJECT_DIR$/CSharpBenchmarks/ArrayAccessMethods.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52D57F27-21D6-403B-B269-6DF28E1EBA0A/d5/75cac3f0/Enumerable.cs" />
+        <option value="$PROJECT_DIR$/CSharpBenchmarks/Program.cs" />
+        <option value="$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/IListAccessMethods.cs" />
+        <option value="$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/ArrayAccessMethods.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1913" />
+    <option name="y" value="1060" />
+    <option name="width" value="1934" />
+    <option name="height" value="1067" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="CSharpBenchmarks" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="CSharpBenchmarks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="CSharpBenchmarks" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="CSharpBenchmarks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="CSharpBenchmarks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Benchmarks" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/CSharpBenchmarks/bin/Release/netcoreapp2.2/CSharpBenchmarks.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CSharpBenchmarks" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/CSharpBenchmarks/CSharpBenchmarks.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.2" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2b78a0c-2059-4bff-ac5d-aba8c41841f0" name="Default Changelist" comment="" />
+      <created>1555176730976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555176730976</updated>
+      <workItem from="1555176733176" duration="1576000" />
+      <workItem from="1555191080758" duration="1661000" />
+      <workItem from="1555194083886" duration="1373000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4610000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1913" y="1060" width="1934" height="1067" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18196371" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.30546623" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Build" order="14" visible="true" weight="0.3290461" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/ArrayAccessMethods.cs" />
+    <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/ListAccessMethods.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/Array2AccessMethods.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CA55E692-DA2C-4C8A-912D-364A352AAD35/58/66490300/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="707" column="60" lean-forward="true" selection-start-line="707" selection-start-column="60" selection-end-line="707" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8B65DBE5-458B-4D44-8CF3-C60F38D71B29/10/d71bfec6/BenchmarkRunner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F25B43C-31E9-43FF-B8F7-C2B0B09EACA0/c3/a4bde3be/ImmutableArray`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F25B43C-31E9-43FF-B8F7-C2B0B09EACA0/c6/d2573fc0/ImmutableArray.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/ReflectionGetAndSetMethods.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1555185132144" expanded="false" signature="6:91" ph="..." />
+            <marker date="1555185132144" expanded="true" signature="205:1482" ph="{...}" />
+            <marker date="1555185132144" expanded="true" signature="243:296" ph="{...}" />
+            <marker date="1555185132144" expanded="true" signature="567:793" ph="{...}" />
+            <marker date="1555185132144" expanded="true" signature="869:1142" ph="{...}" />
+            <marker date="1555185132144" expanded="true" signature="1000:1107" ph="{...}" />
+            <marker date="1555185132144" expanded="true" signature="1198:1476" ph="{...}" />
+            <marker date="1555185132144" expanded="true" signature="1323:1441" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/Shared.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1555187022143" expanded="true" signature="52:174" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/37B379B3-67CB-4B1F-8609-E00EED30209E/23/0275c0df/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="405" column="18" selection-start-line="405" selection-start-column="18" selection-end-line="405" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52D57F27-21D6-403B-B269-6DF28E1EBA0A/d5/75cac3f0/Enumerable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/b4/4b6a2b81/ParameterInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8B65DBE5-458B-4D44-8CF3-C60F38D71B29/98/c4441c45/EmitParameterInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/72/13dadd41/ICustomAttributeProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/2c/1a844c53/MemberInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/863B11AD-AFFF-4401-B5E2-892EBE2F2C9E/21/47db6ec5/DynamicMethod.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="136" column="16" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/73/e5f6fcc2/MethodInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/fa/041c2168/PropertyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <marker date="1555194727533" expanded="true" signature="0:355" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1555194727533" expanded="true" signature="413:23442" ph="{...}" />
+            <marker date="1555194727533" expanded="true" signature="571:23440" ph="{...}" />
+            <marker date="1555194727533" expanded="true" signature="580:701" ph="///Gets the attributes for this property. ... " />
+            <marker date="1555194727533" expanded="true" signature="766:926" ph="///Gets a value indicating whether the property can be read. ... " />
+            <marker date="1555194727533" expanded="true" signature="974:1146" ph="///Gets a value indicating whether the property can be written to. ... " />
+            <marker date="1555194727533" expanded="true" signature="1195:1321" ph="///Gets the get accessor for this property. ... " />
+            <marker date="1555194727533" expanded="true" signature="1376:1552" ph="///Gets a value indicating whether the property is the special name. ... " />
+            <marker date="1555194727533" expanded="true" signature="1597:1853" ph="///Gets a &lt;see cref=&quot;T:System.Reflection.MemberTypes&quot;&gt;&lt;/see&gt; value indicating that this member is a property. ... " />
+            <marker date="1555194727533" expanded="true" signature="1911:2019" ph="///Gets the type of this property. ... " />
+            <marker date="1555194727533" expanded="true" signature="2072:2236" ph="///Gets the set accessor for this property. ... " />
+            <marker date="1555194727533" expanded="true" signature="2291:2615" ph="///Returns a value that indicates whether this instance is equal to a specified object. ... " />
+            <marker date="1555194727533" expanded="true" signature="2666:3078" ph="///Returns an array whose elements reflect the public get and set accessors of the property reflected by the curr ... " />
+            <marker date="1555194727533" expanded="true" signature="3124:3971" ph="///Returns an array whose elements reflect the public and, if specified, non-public get and set accessors of the  ... " />
+            <marker date="1555194727533" expanded="true" signature="4040:4737" ph="///Returns a literal value associated with the property by a compiler. ... " />
+            <marker date="1555194727533" expanded="true" signature="4789:5026" ph="///Returns the public get accessor for this property. ... " />
+            <marker date="1555194727533" expanded="true" signature="5070:5963" ph="///When overridden in a derived class, returns the public or non-public get accessor for this property. ... " />
+            <marker date="1555194727533" expanded="true" signature="6030:6155" ph="///Returns the hash code for this instance. ... " />
+            <marker date="1555194727533" expanded="true" signature="6200:6487" ph="///When overridden in a derived class, returns an array of all the index parameters for the property. ... " />
+            <marker date="1555194727533" expanded="true" signature="6551:6953" ph="///Returns an array of types representing the optional custom modifiers of the property. ... " />
+            <marker date="1555194727533" expanded="true" signature="7015:7779" ph="///Returns a literal value associated with the property by a compiler. ... " />
+            <marker date="1555194727533" expanded="true" signature="7834:8236" ph="///Returns an array of types representing the required custom modifiers of the property. ... " />
+            <marker date="1555194727533" expanded="true" signature="8298:8540" ph="///Returns the public set accessor for this property. ... " />
+            <marker date="1555194727533" expanded="true" signature="8584:9809" ph="///When overridden in a derived class, returns the set accessor for this property. ... " />
+            <marker date="1555194727533" expanded="true" signature="9876:10103" ph="///Returns the property value of a specified object. ... " />
+            <marker date="1555194727533" expanded="true" signature="10149:12432" ph="///Returns the property value of a specified object with optional index values for indexed properties. ... " />
+            <marker date="1555194727533" expanded="true" signature="12502:15136" ph="///When overridden in a derived class, returns the property value of a specified object that has the specified bi ... " />
+            <marker date="1555194727533" expanded="true" signature="15268:15657" ph="///Indicates whether two &lt;see cref=&quot;T:System.Reflection.PropertyInfo&quot;&gt;&lt;/see&gt; objects are equal. ... " />
+            <marker date="1555194727533" expanded="true" signature="15738:16135" ph="///Indicates whether two &lt;see cref=&quot;T:System.Reflection.PropertyInfo&quot;&gt;&lt;/see&gt; objects are not equal. ... " />
+            <marker date="1555194727533" expanded="true" signature="16216:18017" ph="///Sets the property value of a specified object. ... " />
+            <marker date="1555194727533" expanded="true" signature="18075:20444" ph="///Sets the property value of a specified object with optional index values for index properties. ... " />
+            <marker date="1555194727533" expanded="true" signature="20526:23298" ph="///When overridden in a derived class, sets the property value for a specified object that has the specified bind ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <marker date="1555195414539" expanded="false" signature="6:202" ph="..." />
+            <marker date="1555195414539" expanded="true" signature="230:1157" ph="{...}" />
+            <marker date="1555195414539" expanded="true" signature="257:503" ph="{...}" />
+            <marker date="1555195414539" expanded="true" signature="297:497" ph="{...}" />
+            <marker date="1555195414539" expanded="true" signature="374:487" ph="/* BenchmarkRunner.Run&lt;Array2AccessMethods&gt;(); ... */" />
+            <marker date="1555195414539" expanded="true" signature="537:1155" ph="{...}" />
+            <marker date="1555195414539" expanded="true" signature="617:846" ph="{...}" />
+            <marker date="1555195414539" expanded="true" signature="676:810" ph="{...}" />
+            <marker date="1555195414539" expanded="true" signature="726:796" ph="{...}" />
+            <marker date="1555195414539" expanded="true" signature="921:1149" ph="{...}" />
+            <marker date="1555195414539" expanded="true" signature="980:1112" ph="{...}" />
+            <marker date="1555195414539" expanded="true" signature="1029:1098" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/IListAccessMethods.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="104" column="28" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+          <folding>
+            <marker date="1555195431653" expanded="false" signature="6:112" ph="..." />
+            <marker date="1555195431653" expanded="true" signature="140:3357" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="207:3355" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="293:710" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="386:699" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="442:553" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="574:685" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="761:782" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="818:887" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="960:1250" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="1136:1215" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="1296:1555" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="1441:1520" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="1605:1844" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="1737:1809" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="1900:2103" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="2153:2326" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="2377:2586" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="2641:2838" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="2889:3097" ph="{...}" />
+            <marker date="1555195431653" expanded="true" signature="3152:3349" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharpBenchmarks/Benchmarks/ArrayAccessMethods.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+          <folding>
+            <marker date="1555195439507" expanded="false" signature="6:86" ph="..." />
+            <marker date="1555195439507" expanded="true" signature="114:4488" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="212:4486" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="440:674" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="501:664" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="747:1022" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="920:987" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="1079:1354" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="1252:1319" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="1400:1644" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="1542:1609" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="1691:1936" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="1833:1901" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="1986:2225" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="2118:2190" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="2276:2516" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="2409:2481" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="2572:2775" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="2832:3036" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="3086:3259" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="3310:3484" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="3535:3732" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="3784:3982" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="4033:4230" ph="{...}" />
+            <marker date="1555195439507" expanded="true" signature="4282:4480" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

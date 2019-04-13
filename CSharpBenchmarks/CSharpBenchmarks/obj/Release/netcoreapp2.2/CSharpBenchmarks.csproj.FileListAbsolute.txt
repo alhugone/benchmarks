@@ -1,0 +1,11 @@
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.csproj.CoreCompileInputs.cache
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.AssemblyInfoInputs.cache
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.AssemblyInfo.cs
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\CSharpBenchmarks.deps.json
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\CSharpBenchmarks.runtimeconfig.json
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\CSharpBenchmarks.runtimeconfig.dev.json
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\CSharpBenchmarks.dll
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\CSharpBenchmarks.pdb
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.dll
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.pdb
+E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.csprojAssemblyReference.cache

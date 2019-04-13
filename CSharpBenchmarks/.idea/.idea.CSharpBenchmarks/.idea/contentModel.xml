@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\alhug\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\alhug\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_CSharpBenchmarks.-305759141.00" t="ExcludeRecursive" />
+    <e p="E:\Git\benchmarks\CSharpBenchmarks" t="IncludeFlat">
+      <e p="CSharpBenchmarks" t="IncludeRecursive">
+        <e p="BenchmarkDotNet.Artifacts" t="Include">
+          <e p="BenchmarkRun-20190413-095701.log" t="Include" />
+          <e p="BenchmarkRun-20190413-102432.log" t="Include" />
+          <e p="BenchmarkRun-20190413-105057.log" t="Include" />
+          <e p="BenchmarkRun-20190413-110930.log" t="Include" />
+          <e p="CSharpBenchmarks.Array2AccessMethods-20190413-110450.log" t="Include" />
+          <e p="CSharpBenchmarks.Array2AccessMethods-20190413-110559.log" t="Include" />
+          <e p="CSharpBenchmarks.Array2AccessMethods-20190413-110734.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-074451.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-074737.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-074924.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-075025.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-075252.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-075424.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-075655.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-075814.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-075835.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-080038.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-080105.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-080233.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-080306.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-081221.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-081240.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-081329.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-081502.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-081530.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-081557.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-081628.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-081714.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-082338.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-084328.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-084406.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-084503.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-084541.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-085334.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-085341.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-091723.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-092034.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-092611.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-093007.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-095438.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-101658.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-104232.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-104247.log" t="Include" />
+          <e p="CSharpBenchmarks.ArrayAccessMethods-20190413-104355.log" t="Include" />
+          <e p="CSharpBenchmarks.CollectionAccessMethods-20190413-101121.log" t="Include" />
+          <e p="CSharpBenchmarks.CollectionAccessMethods-20190413-101419.log" t="Include" />
+          <e p="CSharpBenchmarks.ListAccessMethods-20190413-112534.log" t="Include" />
+          <e p="CSharpBenchmarks.ReflectionGetAndSetMethods-20190413-095346.log" t="Include" />
+          <e p="CSharpBenchmarks.ReflectionMethods-20190413-094027.log" t="Include" />
+          <e p="CSharpBenchmarks.ReflectionMethods-20190413-094043.log" t="Include" />
+          <e p="CSharpBenchmarks.ReflectionMethods-20190413-094059.log" t="Include" />
+          <e p="CSharpBenchmarks.ReflectionMethods-20190413-094212.log" t="Include" />
+          <e p="CSharpBenchmarks.ReflectionMethods-20190413-094231.log" t="Include" />
+          <e p="CSharpBenchmarks.ReflectionMethods-20190413-094445.log" t="Include" />
+          <e p="results" t="Include">
+            <e p="CSharpBenchmarks.Array2AccessMethods-report-20190413-230457.csv" t="Include" />
+            <e p="CSharpBenchmarks.Array2AccessMethods-report-20190413-230606.csv" t="Include" />
+            <e p="CSharpBenchmarks.Array2AccessMethods-report-20190413-230903.csv" t="Include" />
+            <e p="CSharpBenchmarks.Array2AccessMethods-report-20190413-231059.csv" t="Include" />
+            <e p="CSharpBenchmarks.Array2AccessMethods-report-github.md" t="Include" />
+            <e p="CSharpBenchmarks.Array2AccessMethods-report.csv" t="Include" />
+            <e p="CSharpBenchmarks.Array2AccessMethods-report.html" t="Include" />
+            <e p="CSharpBenchmarks.Array2AccessMethods-report.txt" t="Include" />
+            <e p="CSharpBenchmarks.ArrayAccessMethods-report-github.md" t="Include" />
+            <e p="CSharpBenchmarks.ArrayAccessMethods-report.csv" t="Include" />
+            <e p="CSharpBenchmarks.ArrayAccessMethods-report.html" t="Include" />
+            <e p="CSharpBenchmarks.ArrayAccessMethods-report.txt" t="Include" />
+            <e p="CSharpBenchmarks.ListAccessMethods-report-github.md" t="Include" />
+            <e p="CSharpBenchmarks.ListAccessMethods-report.csv" t="Include" />
+            <e p="CSharpBenchmarks.ListAccessMethods-report.html" t="Include" />
+            <e p="CSharpBenchmarks.ListAccessMethods-report.txt" t="Include" />
+            <e p="CSharpBenchmarks.ReflectionGetAndSetMethods-report-github.md" t="Include" />
+            <e p="CSharpBenchmarks.ReflectionGetAndSetMethods-report.csv" t="Include" />
+            <e p="CSharpBenchmarks.ReflectionGetAndSetMethods-report.html" t="Include" />
+          </e>
+        </e>
+        <e p="benchmarks" t="Include">
+          <e p="Array2AccessMethods.cs" t="Include" />
+          <e p="ArrayAccessMethods.cs" t="Include" />
+          <e p="IListAccessMethods.cs" t="Include" />
+          <e p="ListAccessMethods.cs" t="Include" />
+          <e p="ReflectionGetAndSetMethods.cs" t="Include" />
+          <e p="Shared.cs" t="Include" />
+          <e p="SomeClass.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CSharpBenchmarks.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="CSharpBenchmarks.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="CSharpBenchmarks.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

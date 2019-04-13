@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>CSharpBenchmarks.ReflectionGetAndSetMethods-20190413-111630</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.11.5, OS=Windows 10.0.17134.706 (1803/April2018Update/Redstone4)
+Intel Core i7-5820K CPU 3.30GHz (Broadwell), 1 CPU, 12 logical and 6 physical cores
+.NET Core SDK=2.2.105
+  [Host]     : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+  Job-EFNYUQ : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+</code></pre>
+<pre><code>Jit=RyuJit  Platform=X64  Server=True  
+</code></pre>
+
+<table>
+<thead><tr><th> Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Ratio</th><th>RatioSD</th>
+</tr>
+</thead><tbody><tr><td>FuncAndAction</td><td>28.28 ms</td><td>0.2364 ms</td><td>0.1974 ms</td><td>1.00</td><td>0.00</td>
+</tr><tr><td>Reflection</td><td>883.73 ms</td><td>5.9813 ms</td><td>4.6698 ms</td><td>31.28</td><td>0.24</td>
+</tr></tbody></table>
+</body>
+</html>
