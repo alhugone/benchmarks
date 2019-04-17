@@ -1,0 +1,764 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 8 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5
+// command took 2,05s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5
+// command took 3,19s and exited with 0
+// ***** Done, took 00:00:05 (5.41 sec)   *****
+// Found 8 benchmarks:
+//   AnyArrayVsListAccessMethods.ForAnyCacheArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+//   AnyArrayVsListAccessMethods.ForAnyCacheList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+//   AnyArrayVsListAccessMethods.ForAnyArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+//   AnyArrayVsListAccessMethods.ForAnyList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+//   AnyArrayVsListAccessMethods.LinqAnyArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+//   AnyArrayVsListAccessMethods.LinqAnyList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+//   AnyArrayVsListAccessMethods.ForEachAnyArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+//   AnyArrayVsListAccessMethods.ForEachAnyList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)// **************************
+// Benchmark: AnyArrayVsListAccessMethods.ForAnyCacheArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "87f1da48-1d45-4ae9-bf31-03aa36d7bdf5.dll" --benchmarkName "CSharpBenchmarks.AnyArrayVsListAccessMethods.ForAnyCacheArray" --job "Jit=RyuJit, Platform=X64, Server=True" --benchmarkId 0 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-FFOIBF(Jit=RyuJit, Platform=X64, Server=True)
+
+OverheadJitting  1: 1 op, 453200.00 ns, 453.2000 us/op
+WorkloadJitting  1: 1 op, 33172900.00 ns, 33.1729 ms/op
+
+OverheadJitting  2: 16 op, 693000.00 ns, 43.3125 us/op
+WorkloadJitting  2: 16 op, 523173600.00 ns, 32.6984 ms/op
+
+WorkloadPilot    1: 16 op, 517590400.00 ns, 32.3494 ms/op
+
+OverheadWarmup   1: 16 op, 3300.00 ns, 206.2500 ns/op
+OverheadWarmup   2: 16 op, 500.00 ns, 31.2500 ns/op
+OverheadWarmup   3: 16 op, 2000.00 ns, 125.0000 ns/op
+OverheadWarmup   4: 16 op, 600.00 ns, 37.5000 ns/op
+OverheadWarmup   5: 16 op, 500.00 ns, 31.2500 ns/op
+OverheadWarmup   6: 16 op, 500.00 ns, 31.2500 ns/op
+OverheadWarmup   7: 16 op, 500.00 ns, 31.2500 ns/op
+
+OverheadActual   1: 16 op, 2000.00 ns, 125.0000 ns/op
+OverheadActual   2: 16 op, 400.00 ns, 25.0000 ns/op
+OverheadActual   3: 16 op, 300.00 ns, 18.7500 ns/op
+OverheadActual   4: 16 op, 500.00 ns, 31.2500 ns/op
+OverheadActual   5: 16 op, 600.00 ns, 37.5000 ns/op
+OverheadActual   6: 16 op, 700.00 ns, 43.7500 ns/op
+OverheadActual   7: 16 op, 2100.00 ns, 131.2500 ns/op
+OverheadActual   8: 16 op, 2000.00 ns, 125.0000 ns/op
+OverheadActual   9: 16 op, 400.00 ns, 25.0000 ns/op
+OverheadActual  10: 16 op, 500.00 ns, 31.2500 ns/op
+OverheadActual  11: 16 op, 700.00 ns, 43.7500 ns/op
+OverheadActual  12: 16 op, 600.00 ns, 37.5000 ns/op
+OverheadActual  13: 16 op, 800.00 ns, 50.0000 ns/op
+OverheadActual  14: 16 op, 400.00 ns, 25.0000 ns/op
+OverheadActual  15: 16 op, 500.00 ns, 31.2500 ns/op
+OverheadActual  16: 16 op, 400.00 ns, 25.0000 ns/op
+OverheadActual  17: 16 op, 600.00 ns, 37.5000 ns/op
+OverheadActual  18: 16 op, 400.00 ns, 25.0000 ns/op
+OverheadActual  19: 16 op, 500.00 ns, 31.2500 ns/op
+OverheadActual  20: 16 op, 1900.00 ns, 118.7500 ns/op
+
+WorkloadWarmup   1: 16 op, 522948300.00 ns, 32.6843 ms/op
+WorkloadWarmup   2: 16 op, 520427400.00 ns, 32.5267 ms/op
+WorkloadWarmup   3: 16 op, 521645800.00 ns, 32.6029 ms/op
+WorkloadWarmup   4: 16 op, 521761700.00 ns, 32.6101 ms/op
+WorkloadWarmup   5: 16 op, 521774700.00 ns, 32.6109 ms/op
+WorkloadWarmup   6: 16 op, 520213300.00 ns, 32.5133 ms/op
+WorkloadWarmup   7: 16 op, 521338900.00 ns, 32.5837 ms/op
+WorkloadWarmup   8: 16 op, 521945300.00 ns, 32.6216 ms/op
+WorkloadWarmup   9: 16 op, 519309000.00 ns, 32.4568 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 16 op, 517688800.00 ns, 32.3556 ms/op
+WorkloadActual   2: 16 op, 522015700.00 ns, 32.6260 ms/op
+WorkloadActual   3: 16 op, 515892600.00 ns, 32.2433 ms/op
+WorkloadActual   4: 16 op, 519807300.00 ns, 32.4880 ms/op
+WorkloadActual   5: 16 op, 516912800.00 ns, 32.3071 ms/op
+WorkloadActual   6: 16 op, 517745300.00 ns, 32.3591 ms/op
+WorkloadActual   7: 16 op, 516303500.00 ns, 32.2690 ms/op
+WorkloadActual   8: 16 op, 520476800.00 ns, 32.5298 ms/op
+WorkloadActual   9: 16 op, 518366300.00 ns, 32.3979 ms/op
+WorkloadActual  10: 16 op, 519195200.00 ns, 32.4497 ms/op
+WorkloadActual  11: 16 op, 522205900.00 ns, 32.6379 ms/op
+WorkloadActual  12: 16 op, 520714700.00 ns, 32.5447 ms/op
+WorkloadActual  13: 16 op, 517921100.00 ns, 32.3701 ms/op
+WorkloadActual  14: 16 op, 519280000.00 ns, 32.4550 ms/op
+WorkloadActual  15: 16 op, 516904000.00 ns, 32.3065 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 16 op, 517688250.00 ns, 32.3555 ms/op
+WorkloadResult   2: 16 op, 522015150.00 ns, 32.6259 ms/op
+WorkloadResult   3: 16 op, 515892050.00 ns, 32.2433 ms/op
+WorkloadResult   4: 16 op, 519806750.00 ns, 32.4879 ms/op
+WorkloadResult   5: 16 op, 516912250.00 ns, 32.3070 ms/op
+WorkloadResult   6: 16 op, 517744750.00 ns, 32.3590 ms/op
+WorkloadResult   7: 16 op, 516302950.00 ns, 32.2689 ms/op
+WorkloadResult   8: 16 op, 520476250.00 ns, 32.5298 ms/op
+WorkloadResult   9: 16 op, 518365750.00 ns, 32.3979 ms/op
+WorkloadResult  10: 16 op, 519194650.00 ns, 32.4497 ms/op
+WorkloadResult  11: 16 op, 522205350.00 ns, 32.6378 ms/op
+WorkloadResult  12: 16 op, 520714150.00 ns, 32.5446 ms/op
+WorkloadResult  13: 16 op, 517920550.00 ns, 32.3700 ms/op
+WorkloadResult  14: 16 op, 519279450.00 ns, 32.4550 ms/op
+WorkloadResult  15: 16 op, 516903450.00 ns, 32.3065 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 32.4226 ms, StdErr = 0.0320 ms (0.10%); N = 15, StdDev = 0.1238 ms
+Min = 32.2433 ms, Q1 = 32.3070 ms, Median = 32.3979 ms, Q3 = 32.5298 ms, Max = 32.6378 ms
+IQR = 0.2228 ms, LowerFence = 31.9729 ms, UpperFence = 32.8639 ms
+ConfidenceInterval = [32.2902 ms; 32.5550 ms] (CI 99.9%), Margin = 0.1324 ms (0.41% of Mean)
+Skewness = 0.3, Kurtosis = 1.77, MValue = 2
+
+// **************************
+// Benchmark: AnyArrayVsListAccessMethods.ForAnyCacheList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "87f1da48-1d45-4ae9-bf31-03aa36d7bdf5.dll" --benchmarkName "CSharpBenchmarks.AnyArrayVsListAccessMethods.ForAnyCacheList" --job "Jit=RyuJit, Platform=X64, Server=True" --benchmarkId 1 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-ILPMOA(Jit=RyuJit, Platform=X64, Server=True)
+
+OverheadJitting  1: 1 op, 427400.00 ns, 427.4000 us/op
+WorkloadJitting  1: 1 op, 49916800.00 ns, 49.9168 ms/op
+
+WorkloadPilot    1: 2 op, 97577700.00 ns, 48.7889 ms/op
+WorkloadPilot    2: 3 op, 146668000.00 ns, 48.8893 ms/op
+WorkloadPilot    3: 4 op, 194721000.00 ns, 48.6803 ms/op
+WorkloadPilot    4: 5 op, 243604200.00 ns, 48.7208 ms/op
+WorkloadPilot    5: 6 op, 294498800.00 ns, 49.0831 ms/op
+WorkloadPilot    6: 7 op, 341620700.00 ns, 48.8030 ms/op
+WorkloadPilot    7: 8 op, 389567500.00 ns, 48.6959 ms/op
+WorkloadPilot    8: 9 op, 439807000.00 ns, 48.8674 ms/op
+WorkloadPilot    9: 10 op, 486983700.00 ns, 48.6984 ms/op
+WorkloadPilot   10: 11 op, 536126300.00 ns, 48.7388 ms/op
+
+WorkloadWarmup   1: 11 op, 534714400.00 ns, 48.6104 ms/op
+WorkloadWarmup   2: 11 op, 540552800.00 ns, 49.1412 ms/op
+WorkloadWarmup   3: 11 op, 535518300.00 ns, 48.6835 ms/op
+WorkloadWarmup   4: 11 op, 536732800.00 ns, 48.7939 ms/op
+WorkloadWarmup   5: 11 op, 535503100.00 ns, 48.6821 ms/op
+WorkloadWarmup   6: 11 op, 536622800.00 ns, 48.7839 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 11 op, 540186400.00 ns, 49.1079 ms/op
+WorkloadActual   2: 11 op, 536873400.00 ns, 48.8067 ms/op
+WorkloadActual   3: 11 op, 535463100.00 ns, 48.6785 ms/op
+WorkloadActual   4: 11 op, 542006700.00 ns, 49.2733 ms/op
+WorkloadActual   5: 11 op, 534791800.00 ns, 48.6174 ms/op
+WorkloadActual   6: 11 op, 537482200.00 ns, 48.8620 ms/op
+WorkloadActual   7: 11 op, 536285400.00 ns, 48.7532 ms/op
+WorkloadActual   8: 11 op, 535773800.00 ns, 48.7067 ms/op
+WorkloadActual   9: 11 op, 535575200.00 ns, 48.6887 ms/op
+WorkloadActual  10: 11 op, 535709900.00 ns, 48.7009 ms/op
+WorkloadActual  11: 11 op, 535664800.00 ns, 48.6968 ms/op
+WorkloadActual  12: 11 op, 535563400.00 ns, 48.6876 ms/op
+WorkloadActual  13: 11 op, 535903600.00 ns, 48.7185 ms/op
+WorkloadActual  14: 11 op, 551600500.00 ns, 50.1455 ms/op
+WorkloadActual  15: 11 op, 561560600.00 ns, 51.0510 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 11 op, 540186400.00 ns, 49.1079 ms/op
+WorkloadResult   2: 11 op, 536873400.00 ns, 48.8067 ms/op
+WorkloadResult   3: 11 op, 535463100.00 ns, 48.6785 ms/op
+WorkloadResult   4: 11 op, 542006700.00 ns, 49.2733 ms/op
+WorkloadResult   5: 11 op, 534791800.00 ns, 48.6174 ms/op
+WorkloadResult   6: 11 op, 537482200.00 ns, 48.8620 ms/op
+WorkloadResult   7: 11 op, 536285400.00 ns, 48.7532 ms/op
+WorkloadResult   8: 11 op, 535773800.00 ns, 48.7067 ms/op
+WorkloadResult   9: 11 op, 535575200.00 ns, 48.6887 ms/op
+WorkloadResult  10: 11 op, 535709900.00 ns, 48.7009 ms/op
+WorkloadResult  11: 11 op, 535664800.00 ns, 48.6968 ms/op
+WorkloadResult  12: 11 op, 535563400.00 ns, 48.6876 ms/op
+WorkloadResult  13: 11 op, 535903600.00 ns, 48.7185 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 48.7922 ms, StdErr = 0.0527 ms (0.11%); N = 13, StdDev = 0.1900 ms
+Min = 48.6174 ms, Q1 = 48.6881 ms, Median = 48.7067 ms, Q3 = 48.8343 ms, Max = 49.2733 ms
+IQR = 0.1462 ms, LowerFence = 48.4688 ms, UpperFence = 49.0537 ms
+ConfidenceInterval = [48.5647 ms; 49.0197 ms] (CI 99.9%), Margin = 0.2275 ms (0.47% of Mean)
+Skewness = 1.47, Kurtosis = 3.85, MValue = 2
+
+// **************************
+// Benchmark: AnyArrayVsListAccessMethods.ForAnyArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "87f1da48-1d45-4ae9-bf31-03aa36d7bdf5.dll" --benchmarkName "CSharpBenchmarks.AnyArrayVsListAccessMethods.ForAnyArray" --job "Jit=RyuJit, Platform=X64, Server=True" --benchmarkId 2 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-NDDURC(Jit=RyuJit, Platform=X64, Server=True)
+
+OverheadJitting  1: 1 op, 455300.00 ns, 455.3000 us/op
+WorkloadJitting  1: 1 op, 42504000.00 ns, 42.5040 ms/op
+
+WorkloadPilot    1: 2 op, 82501900.00 ns, 41.2510 ms/op
+WorkloadPilot    2: 3 op, 128813900.00 ns, 42.9380 ms/op
+WorkloadPilot    3: 4 op, 175907800.00 ns, 43.9770 ms/op
+WorkloadPilot    4: 5 op, 209755500.00 ns, 41.9511 ms/op
+WorkloadPilot    5: 6 op, 263458600.00 ns, 43.9098 ms/op
+WorkloadPilot    6: 7 op, 289765400.00 ns, 41.3951 ms/op
+WorkloadPilot    7: 8 op, 336791300.00 ns, 42.0989 ms/op
+WorkloadPilot    8: 9 op, 372950400.00 ns, 41.4389 ms/op
+WorkloadPilot    9: 10 op, 434934000.00 ns, 43.4934 ms/op
+WorkloadPilot   10: 11 op, 457147000.00 ns, 41.5588 ms/op
+WorkloadPilot   11: 12 op, 517934300.00 ns, 43.1612 ms/op
+
+WorkloadWarmup   1: 12 op, 497465000.00 ns, 41.4554 ms/op
+WorkloadWarmup   2: 12 op, 496456000.00 ns, 41.3713 ms/op
+WorkloadWarmup   3: 12 op, 498031900.00 ns, 41.5027 ms/op
+WorkloadWarmup   4: 12 op, 496834100.00 ns, 41.4028 ms/op
+WorkloadWarmup   5: 12 op, 498181100.00 ns, 41.5151 ms/op
+WorkloadWarmup   6: 12 op, 499872200.00 ns, 41.6560 ms/op
+WorkloadWarmup   7: 12 op, 496118600.00 ns, 41.3432 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 12 op, 496651900.00 ns, 41.3877 ms/op
+WorkloadActual   2: 12 op, 497809500.00 ns, 41.4841 ms/op
+WorkloadActual   3: 12 op, 496913000.00 ns, 41.4094 ms/op
+WorkloadActual   4: 12 op, 501714900.00 ns, 41.8096 ms/op
+WorkloadActual   5: 12 op, 499598000.00 ns, 41.6332 ms/op
+WorkloadActual   6: 12 op, 497819000.00 ns, 41.4849 ms/op
+WorkloadActual   7: 12 op, 498958200.00 ns, 41.5799 ms/op
+WorkloadActual   8: 12 op, 497727900.00 ns, 41.4773 ms/op
+WorkloadActual   9: 12 op, 498781600.00 ns, 41.5651 ms/op
+WorkloadActual  10: 12 op, 497346400.00 ns, 41.4455 ms/op
+WorkloadActual  11: 12 op, 497288500.00 ns, 41.4407 ms/op
+WorkloadActual  12: 12 op, 501889200.00 ns, 41.8241 ms/op
+WorkloadActual  13: 12 op, 498383200.00 ns, 41.5319 ms/op
+WorkloadActual  14: 12 op, 502205400.00 ns, 41.8505 ms/op
+WorkloadActual  15: 12 op, 500270900.00 ns, 41.6892 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 12 op, 496651900.00 ns, 41.3877 ms/op
+WorkloadResult   2: 12 op, 497809500.00 ns, 41.4841 ms/op
+WorkloadResult   3: 12 op, 496913000.00 ns, 41.4094 ms/op
+WorkloadResult   4: 12 op, 501714900.00 ns, 41.8096 ms/op
+WorkloadResult   5: 12 op, 499598000.00 ns, 41.6332 ms/op
+WorkloadResult   6: 12 op, 497819000.00 ns, 41.4849 ms/op
+WorkloadResult   7: 12 op, 498958200.00 ns, 41.5799 ms/op
+WorkloadResult   8: 12 op, 497727900.00 ns, 41.4773 ms/op
+WorkloadResult   9: 12 op, 498781600.00 ns, 41.5651 ms/op
+WorkloadResult  10: 12 op, 497346400.00 ns, 41.4455 ms/op
+WorkloadResult  11: 12 op, 497288500.00 ns, 41.4407 ms/op
+WorkloadResult  12: 12 op, 501889200.00 ns, 41.8241 ms/op
+WorkloadResult  13: 12 op, 498383200.00 ns, 41.5319 ms/op
+WorkloadResult  14: 12 op, 502205400.00 ns, 41.8505 ms/op
+WorkloadResult  15: 12 op, 500270900.00 ns, 41.6892 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 41.5742 ms, StdErr = 0.0399 ms (0.10%); N = 15, StdDev = 0.1546 ms
+Min = 41.3877 ms, Q1 = 41.4455 ms, Median = 41.5319 ms, Q3 = 41.6892 ms, Max = 41.8505 ms
+IQR = 0.2437 ms, LowerFence = 41.0800 ms, UpperFence = 42.0548 ms
+ConfidenceInterval = [41.4089 ms; 41.7395 ms] (CI 99.9%), Margin = 0.1653 ms (0.40% of Mean)
+Skewness = 0.61, Kurtosis = 1.84, MValue = 2
+
+// **************************
+// Benchmark: AnyArrayVsListAccessMethods.ForAnyList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "87f1da48-1d45-4ae9-bf31-03aa36d7bdf5.dll" --benchmarkName "CSharpBenchmarks.AnyArrayVsListAccessMethods.ForAnyList" --job "Jit=RyuJit, Platform=X64, Server=True" --benchmarkId 3 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-NWZJHU(Jit=RyuJit, Platform=X64, Server=True)
+
+OverheadJitting  1: 1 op, 426300.00 ns, 426.3000 us/op
+WorkloadJitting  1: 1 op, 84455700.00 ns, 84.4557 ms/op
+
+WorkloadPilot    1: 2 op, 168524200.00 ns, 84.2621 ms/op
+WorkloadPilot    2: 3 op, 251509500.00 ns, 83.8365 ms/op
+WorkloadPilot    3: 4 op, 334318900.00 ns, 83.5797 ms/op
+WorkloadPilot    4: 5 op, 417792200.00 ns, 83.5584 ms/op
+WorkloadPilot    5: 6 op, 502637500.00 ns, 83.7729 ms/op
+
+WorkloadWarmup   1: 6 op, 500689800.00 ns, 83.4483 ms/op
+WorkloadWarmup   2: 6 op, 506443000.00 ns, 84.4072 ms/op
+WorkloadWarmup   3: 6 op, 501102000.00 ns, 83.5170 ms/op
+WorkloadWarmup   4: 6 op, 502485500.00 ns, 83.7476 ms/op
+WorkloadWarmup   5: 6 op, 504687300.00 ns, 84.1146 ms/op
+WorkloadWarmup   6: 6 op, 503364700.00 ns, 83.8941 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 6 op, 504632200.00 ns, 84.1054 ms/op
+WorkloadActual   2: 6 op, 505252200.00 ns, 84.2087 ms/op
+WorkloadActual   3: 6 op, 506252300.00 ns, 84.3754 ms/op
+WorkloadActual   4: 6 op, 504605800.00 ns, 84.1010 ms/op
+WorkloadActual   5: 6 op, 506132000.00 ns, 84.3553 ms/op
+WorkloadActual   6: 6 op, 503868400.00 ns, 83.9781 ms/op
+WorkloadActual   7: 6 op, 504375800.00 ns, 84.0626 ms/op
+WorkloadActual   8: 6 op, 506374300.00 ns, 84.3957 ms/op
+WorkloadActual   9: 6 op, 501856700.00 ns, 83.6428 ms/op
+WorkloadActual  10: 6 op, 504117800.00 ns, 84.0196 ms/op
+WorkloadActual  11: 6 op, 502351400.00 ns, 83.7252 ms/op
+WorkloadActual  12: 6 op, 502154400.00 ns, 83.6924 ms/op
+WorkloadActual  13: 6 op, 506186300.00 ns, 84.3644 ms/op
+WorkloadActual  14: 6 op, 503042300.00 ns, 83.8404 ms/op
+WorkloadActual  15: 6 op, 500546700.00 ns, 83.4245 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 6 op, 504632200.00 ns, 84.1054 ms/op
+WorkloadResult   2: 6 op, 505252200.00 ns, 84.2087 ms/op
+WorkloadResult   3: 6 op, 506252300.00 ns, 84.3754 ms/op
+WorkloadResult   4: 6 op, 504605800.00 ns, 84.1010 ms/op
+WorkloadResult   5: 6 op, 506132000.00 ns, 84.3553 ms/op
+WorkloadResult   6: 6 op, 503868400.00 ns, 83.9781 ms/op
+WorkloadResult   7: 6 op, 504375800.00 ns, 84.0626 ms/op
+WorkloadResult   8: 6 op, 506374300.00 ns, 84.3957 ms/op
+WorkloadResult   9: 6 op, 501856700.00 ns, 83.6428 ms/op
+WorkloadResult  10: 6 op, 504117800.00 ns, 84.0196 ms/op
+WorkloadResult  11: 6 op, 502351400.00 ns, 83.7252 ms/op
+WorkloadResult  12: 6 op, 502154400.00 ns, 83.6924 ms/op
+WorkloadResult  13: 6 op, 506186300.00 ns, 84.3644 ms/op
+WorkloadResult  14: 6 op, 503042300.00 ns, 83.8404 ms/op
+WorkloadResult  15: 6 op, 500546700.00 ns, 83.4245 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 84.0194 ms, StdErr = 0.0779 ms (0.09%); N = 15, StdDev = 0.3018 ms
+Min = 83.4245 ms, Q1 = 83.7252 ms, Median = 84.0626 ms, Q3 = 84.3553 ms, Max = 84.3957 ms
+IQR = 0.6301 ms, LowerFence = 82.7801 ms, UpperFence = 85.3005 ms
+ConfidenceInterval = [83.6968 ms; 84.3420 ms] (CI 99.9%), Margin = 0.3226 ms (0.38% of Mean)
+Skewness = -0.35, Kurtosis = 1.85, MValue = 2
+
+// **************************
+// Benchmark: AnyArrayVsListAccessMethods.LinqAnyArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "87f1da48-1d45-4ae9-bf31-03aa36d7bdf5.dll" --benchmarkName "CSharpBenchmarks.AnyArrayVsListAccessMethods.LinqAnyArray" --job "Jit=RyuJit, Platform=X64, Server=True" --benchmarkId 4 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-QADMQW(Jit=RyuJit, Platform=X64, Server=True)
+
+OverheadJitting  1: 1 op, 428000.00 ns, 428.0000 us/op
+WorkloadJitting  1: 1 op, 538977500.00 ns, 538.9775 ms/op
+
+WorkloadWarmup   1: 1 op, 530880800.00 ns, 530.8808 ms/op
+WorkloadWarmup   2: 1 op, 534876100.00 ns, 534.8761 ms/op
+WorkloadWarmup   3: 1 op, 535261900.00 ns, 535.2619 ms/op
+WorkloadWarmup   4: 1 op, 534638300.00 ns, 534.6383 ms/op
+WorkloadWarmup   5: 1 op, 532718700.00 ns, 532.7187 ms/op
+WorkloadWarmup   6: 1 op, 530344100.00 ns, 530.3441 ms/op
+WorkloadWarmup   7: 1 op, 532955100.00 ns, 532.9551 ms/op
+WorkloadWarmup   8: 1 op, 532163900.00 ns, 532.1639 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 535007900.00 ns, 535.0079 ms/op
+WorkloadActual   2: 1 op, 535052200.00 ns, 535.0522 ms/op
+WorkloadActual   3: 1 op, 532832700.00 ns, 532.8327 ms/op
+WorkloadActual   4: 1 op, 531798100.00 ns, 531.7981 ms/op
+WorkloadActual   5: 1 op, 535118600.00 ns, 535.1186 ms/op
+WorkloadActual   6: 1 op, 531237100.00 ns, 531.2371 ms/op
+WorkloadActual   7: 1 op, 532155700.00 ns, 532.1557 ms/op
+WorkloadActual   8: 1 op, 532029600.00 ns, 532.0296 ms/op
+WorkloadActual   9: 1 op, 534226800.00 ns, 534.2268 ms/op
+WorkloadActual  10: 1 op, 530743200.00 ns, 530.7432 ms/op
+WorkloadActual  11: 1 op, 533808100.00 ns, 533.8081 ms/op
+WorkloadActual  12: 1 op, 530538600.00 ns, 530.5386 ms/op
+WorkloadActual  13: 1 op, 537484600.00 ns, 537.4846 ms/op
+WorkloadActual  14: 1 op, 536584200.00 ns, 536.5842 ms/op
+WorkloadActual  15: 1 op, 536141400.00 ns, 536.1414 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 535007900.00 ns, 535.0079 ms/op
+WorkloadResult   2: 1 op, 535052200.00 ns, 535.0522 ms/op
+WorkloadResult   3: 1 op, 532832700.00 ns, 532.8327 ms/op
+WorkloadResult   4: 1 op, 531798100.00 ns, 531.7981 ms/op
+WorkloadResult   5: 1 op, 535118600.00 ns, 535.1186 ms/op
+WorkloadResult   6: 1 op, 531237100.00 ns, 531.2371 ms/op
+WorkloadResult   7: 1 op, 532155700.00 ns, 532.1557 ms/op
+WorkloadResult   8: 1 op, 532029600.00 ns, 532.0296 ms/op
+WorkloadResult   9: 1 op, 534226800.00 ns, 534.2268 ms/op
+WorkloadResult  10: 1 op, 530743200.00 ns, 530.7432 ms/op
+WorkloadResult  11: 1 op, 533808100.00 ns, 533.8081 ms/op
+WorkloadResult  12: 1 op, 530538600.00 ns, 530.5386 ms/op
+WorkloadResult  13: 1 op, 537484600.00 ns, 537.4846 ms/op
+WorkloadResult  14: 1 op, 536584200.00 ns, 536.5842 ms/op
+WorkloadResult  15: 1 op, 536141400.00 ns, 536.1414 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 533.6506 ms, StdErr = 0.5722 ms (0.11%); N = 15, StdDev = 2.2161 ms
+Min = 530.5386 ms, Q1 = 531.7981 ms, Median = 533.8081 ms, Q3 = 535.1186 ms, Max = 537.4846 ms
+IQR = 3.3205 ms, LowerFence = 526.8174 ms, UpperFence = 540.0994 ms
+ConfidenceInterval = [531.2815 ms; 536.0197 ms] (CI 99.9%), Margin = 2.3691 ms (0.44% of Mean)
+Skewness = 0.14, Kurtosis = 1.56, MValue = 2
+
+// **************************
+// Benchmark: AnyArrayVsListAccessMethods.LinqAnyList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "87f1da48-1d45-4ae9-bf31-03aa36d7bdf5.dll" --benchmarkName "CSharpBenchmarks.AnyArrayVsListAccessMethods.LinqAnyList" --job "Jit=RyuJit, Platform=X64, Server=True" --benchmarkId 5 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-VQPUPU(Jit=RyuJit, Platform=X64, Server=True)
+
+OverheadJitting  1: 1 op, 451900.00 ns, 451.9000 us/op
+WorkloadJitting  1: 1 op, 833694000.00 ns, 833.6940 ms/op
+
+WorkloadWarmup   1: 1 op, 813344000.00 ns, 813.3440 ms/op
+WorkloadWarmup   2: 1 op, 812530300.00 ns, 812.5303 ms/op
+WorkloadWarmup   3: 1 op, 819128300.00 ns, 819.1283 ms/op
+WorkloadWarmup   4: 1 op, 803983500.00 ns, 803.9835 ms/op
+WorkloadWarmup   5: 1 op, 805412700.00 ns, 805.4127 ms/op
+WorkloadWarmup   6: 1 op, 806511600.00 ns, 806.5116 ms/op
+WorkloadWarmup   7: 1 op, 803860600.00 ns, 803.8606 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 805032700.00 ns, 805.0327 ms/op
+WorkloadActual   2: 1 op, 807946800.00 ns, 807.9468 ms/op
+WorkloadActual   3: 1 op, 803815500.00 ns, 803.8155 ms/op
+WorkloadActual   4: 1 op, 804498000.00 ns, 804.4980 ms/op
+WorkloadActual   5: 1 op, 806278700.00 ns, 806.2787 ms/op
+WorkloadActual   6: 1 op, 803126800.00 ns, 803.1268 ms/op
+WorkloadActual   7: 1 op, 805134700.00 ns, 805.1347 ms/op
+WorkloadActual   8: 1 op, 805365200.00 ns, 805.3652 ms/op
+WorkloadActual   9: 1 op, 805485900.00 ns, 805.4859 ms/op
+WorkloadActual  10: 1 op, 808741800.00 ns, 808.7418 ms/op
+WorkloadActual  11: 1 op, 809176800.00 ns, 809.1768 ms/op
+WorkloadActual  12: 1 op, 812573100.00 ns, 812.5731 ms/op
+WorkloadActual  13: 1 op, 820022600.00 ns, 820.0226 ms/op
+WorkloadActual  14: 1 op, 815774700.00 ns, 815.7747 ms/op
+WorkloadActual  15: 1 op, 810499000.00 ns, 810.4990 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 805032700.00 ns, 805.0327 ms/op
+WorkloadResult   2: 1 op, 807946800.00 ns, 807.9468 ms/op
+WorkloadResult   3: 1 op, 803815500.00 ns, 803.8155 ms/op
+WorkloadResult   4: 1 op, 804498000.00 ns, 804.4980 ms/op
+WorkloadResult   5: 1 op, 806278700.00 ns, 806.2787 ms/op
+WorkloadResult   6: 1 op, 803126800.00 ns, 803.1268 ms/op
+WorkloadResult   7: 1 op, 805134700.00 ns, 805.1347 ms/op
+WorkloadResult   8: 1 op, 805365200.00 ns, 805.3652 ms/op
+WorkloadResult   9: 1 op, 805485900.00 ns, 805.4859 ms/op
+WorkloadResult  10: 1 op, 808741800.00 ns, 808.7418 ms/op
+WorkloadResult  11: 1 op, 809176800.00 ns, 809.1768 ms/op
+WorkloadResult  12: 1 op, 812573100.00 ns, 812.5731 ms/op
+WorkloadResult  13: 1 op, 815774700.00 ns, 815.7747 ms/op
+WorkloadResult  14: 1 op, 810499000.00 ns, 810.4990 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 807.3893 ms, StdErr = 0.9695 ms (0.12%); N = 14, StdDev = 3.6277 ms
+Min = 803.1268 ms, Q1 = 805.0327 ms, Median = 805.8823 ms, Q3 = 809.1768 ms, Max = 815.7747 ms
+IQR = 4.1441 ms, LowerFence = 798.8166 ms, UpperFence = 815.3930 ms
+ConfidenceInterval = [803.2970 ms; 811.4815 ms] (CI 99.9%), Margin = 4.0923 ms (0.51% of Mean)
+Skewness = 0.87, Kurtosis = 2.65, MValue = 2
+
+// **************************
+// Benchmark: AnyArrayVsListAccessMethods.ForEachAnyArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "87f1da48-1d45-4ae9-bf31-03aa36d7bdf5.dll" --benchmarkName "CSharpBenchmarks.AnyArrayVsListAccessMethods.ForEachAnyArray" --job "Jit=RyuJit, Platform=X64, Server=True" --benchmarkId 6 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-SAEDRC(Jit=RyuJit, Platform=X64, Server=True)
+
+OverheadJitting  1: 1 op, 468700.00 ns, 468.7000 us/op
+WorkloadJitting  1: 1 op, 33434300.00 ns, 33.4343 ms/op
+
+WorkloadPilot    1: 2 op, 65777900.00 ns, 32.8890 ms/op
+WorkloadPilot    2: 3 op, 97886800.00 ns, 32.6289 ms/op
+WorkloadPilot    3: 4 op, 130672600.00 ns, 32.6682 ms/op
+WorkloadPilot    4: 5 op, 162586100.00 ns, 32.5172 ms/op
+WorkloadPilot    5: 6 op, 203713300.00 ns, 33.9522 ms/op
+WorkloadPilot    6: 7 op, 237017100.00 ns, 33.8596 ms/op
+WorkloadPilot    7: 8 op, 279644500.00 ns, 34.9556 ms/op
+WorkloadPilot    8: 9 op, 291192700.00 ns, 32.3547 ms/op
+WorkloadPilot    9: 10 op, 326855200.00 ns, 32.6855 ms/op
+WorkloadPilot   10: 11 op, 360654100.00 ns, 32.7867 ms/op
+WorkloadPilot   11: 12 op, 395604500.00 ns, 32.9670 ms/op
+WorkloadPilot   12: 13 op, 424503800.00 ns, 32.6541 ms/op
+WorkloadPilot   13: 14 op, 455934200.00 ns, 32.5667 ms/op
+WorkloadPilot   14: 15 op, 485578700.00 ns, 32.3719 ms/op
+WorkloadPilot   15: 16 op, 518885800.00 ns, 32.4304 ms/op
+
+WorkloadWarmup   1: 16 op, 533398000.00 ns, 33.3374 ms/op
+WorkloadWarmup   2: 16 op, 537318400.00 ns, 33.5824 ms/op
+WorkloadWarmup   3: 16 op, 542311000.00 ns, 33.8944 ms/op
+WorkloadWarmup   4: 16 op, 525154600.00 ns, 32.8222 ms/op
+WorkloadWarmup   5: 16 op, 524202000.00 ns, 32.7626 ms/op
+WorkloadWarmup   6: 16 op, 533830100.00 ns, 33.3644 ms/op
+WorkloadWarmup   7: 16 op, 533273400.00 ns, 33.3296 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 16 op, 519669300.00 ns, 32.4793 ms/op
+WorkloadActual   2: 16 op, 534992800.00 ns, 33.4371 ms/op
+WorkloadActual   3: 16 op, 519814800.00 ns, 32.4884 ms/op
+WorkloadActual   4: 16 op, 518726800.00 ns, 32.4204 ms/op
+WorkloadActual   5: 16 op, 518899800.00 ns, 32.4312 ms/op
+WorkloadActual   6: 16 op, 521573200.00 ns, 32.5983 ms/op
+WorkloadActual   7: 16 op, 517750400.00 ns, 32.3594 ms/op
+WorkloadActual   8: 16 op, 518009400.00 ns, 32.3756 ms/op
+WorkloadActual   9: 16 op, 520070200.00 ns, 32.5044 ms/op
+WorkloadActual  10: 16 op, 518889000.00 ns, 32.4306 ms/op
+WorkloadActual  11: 16 op, 519658900.00 ns, 32.4787 ms/op
+WorkloadActual  12: 16 op, 516867000.00 ns, 32.3042 ms/op
+WorkloadActual  13: 16 op, 521282200.00 ns, 32.5801 ms/op
+WorkloadActual  14: 16 op, 522563000.00 ns, 32.6602 ms/op
+WorkloadActual  15: 16 op, 519259200.00 ns, 32.4537 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 16 op, 519669300.00 ns, 32.4793 ms/op
+WorkloadResult   2: 16 op, 519814800.00 ns, 32.4884 ms/op
+WorkloadResult   3: 16 op, 518726800.00 ns, 32.4204 ms/op
+WorkloadResult   4: 16 op, 518899800.00 ns, 32.4312 ms/op
+WorkloadResult   5: 16 op, 521573200.00 ns, 32.5983 ms/op
+WorkloadResult   6: 16 op, 517750400.00 ns, 32.3594 ms/op
+WorkloadResult   7: 16 op, 518009400.00 ns, 32.3756 ms/op
+WorkloadResult   8: 16 op, 520070200.00 ns, 32.5044 ms/op
+WorkloadResult   9: 16 op, 518889000.00 ns, 32.4306 ms/op
+WorkloadResult  10: 16 op, 519658900.00 ns, 32.4787 ms/op
+WorkloadResult  11: 16 op, 516867000.00 ns, 32.3042 ms/op
+WorkloadResult  12: 16 op, 521282200.00 ns, 32.5801 ms/op
+WorkloadResult  13: 16 op, 522563000.00 ns, 32.6602 ms/op
+WorkloadResult  14: 16 op, 519259200.00 ns, 32.4537 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 32.4689 ms, StdErr = 0.0258 ms (0.08%); N = 14, StdDev = 0.0964 ms
+Min = 32.3042 ms, Q1 = 32.4204 ms, Median = 32.4662 ms, Q3 = 32.5044 ms, Max = 32.6602 ms
+IQR = 0.0840 ms, LowerFence = 32.2945 ms, UpperFence = 32.6303 ms
+ConfidenceInterval = [32.3601 ms; 32.5777 ms] (CI 99.9%), Margin = 0.1088 ms (0.33% of Mean)
+Skewness = 0.3, Kurtosis = 2.26, MValue = 2
+
+// **************************
+// Benchmark: AnyArrayVsListAccessMethods.ForEachAnyList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "87f1da48-1d45-4ae9-bf31-03aa36d7bdf5.dll" --benchmarkName "CSharpBenchmarks.AnyArrayVsListAccessMethods.ForEachAnyList" --job "Jit=RyuJit, Platform=X64, Server=True" --benchmarkId 7 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\87f1da48-1d45-4ae9-bf31-03aa36d7bdf5\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-UXCRVT(Jit=RyuJit, Platform=X64, Server=True)
+
+OverheadJitting  1: 1 op, 410900.00 ns, 410.9000 us/op
+WorkloadJitting  1: 1 op, 251151900.00 ns, 251.1519 ms/op
+
+WorkloadPilot    1: 2 op, 499547600.00 ns, 249.7738 ms/op
+WorkloadPilot    2: 3 op, 749110200.00 ns, 249.7034 ms/op
+
+WorkloadWarmup   1: 3 op, 747395400.00 ns, 249.1318 ms/op
+WorkloadWarmup   2: 3 op, 749094600.00 ns, 249.6982 ms/op
+WorkloadWarmup   3: 3 op, 751975600.00 ns, 250.6585 ms/op
+WorkloadWarmup   4: 3 op, 747908600.00 ns, 249.3029 ms/op
+WorkloadWarmup   5: 3 op, 749524700.00 ns, 249.8416 ms/op
+WorkloadWarmup   6: 3 op, 750511000.00 ns, 250.1703 ms/op
+WorkloadWarmup   7: 3 op, 749026900.00 ns, 249.6756 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 3 op, 747869900.00 ns, 249.2900 ms/op
+WorkloadActual   2: 3 op, 748693900.00 ns, 249.5646 ms/op
+WorkloadActual   3: 3 op, 748873600.00 ns, 249.6245 ms/op
+WorkloadActual   4: 3 op, 749219400.00 ns, 249.7398 ms/op
+WorkloadActual   5: 3 op, 753047100.00 ns, 251.0157 ms/op
+WorkloadActual   6: 3 op, 747183800.00 ns, 249.0613 ms/op
+WorkloadActual   7: 3 op, 755917200.00 ns, 251.9724 ms/op
+WorkloadActual   8: 3 op, 857417700.00 ns, 285.8059 ms/op
+WorkloadActual   9: 3 op, 758178900.00 ns, 252.7263 ms/op
+WorkloadActual  10: 3 op, 755327700.00 ns, 251.7759 ms/op
+WorkloadActual  11: 3 op, 749575200.00 ns, 249.8584 ms/op
+WorkloadActual  12: 3 op, 759510300.00 ns, 253.1701 ms/op
+WorkloadActual  13: 3 op, 750947900.00 ns, 250.3160 ms/op
+WorkloadActual  14: 3 op, 752335900.00 ns, 250.7786 ms/op
+WorkloadActual  15: 3 op, 754022700.00 ns, 251.3409 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 3 op, 747869900.00 ns, 249.2900 ms/op
+WorkloadResult   2: 3 op, 748693900.00 ns, 249.5646 ms/op
+WorkloadResult   3: 3 op, 748873600.00 ns, 249.6245 ms/op
+WorkloadResult   4: 3 op, 749219400.00 ns, 249.7398 ms/op
+WorkloadResult   5: 3 op, 753047100.00 ns, 251.0157 ms/op
+WorkloadResult   6: 3 op, 747183800.00 ns, 249.0613 ms/op
+WorkloadResult   7: 3 op, 755917200.00 ns, 251.9724 ms/op
+WorkloadResult   8: 3 op, 758178900.00 ns, 252.7263 ms/op
+WorkloadResult   9: 3 op, 755327700.00 ns, 251.7759 ms/op
+WorkloadResult  10: 3 op, 749575200.00 ns, 249.8584 ms/op
+WorkloadResult  11: 3 op, 759510300.00 ns, 253.1701 ms/op
+WorkloadResult  12: 3 op, 750947900.00 ns, 250.3160 ms/op
+WorkloadResult  13: 3 op, 752335900.00 ns, 250.7786 ms/op
+WorkloadResult  14: 3 op, 754022700.00 ns, 251.3409 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 250.7310 ms, StdErr = 0.3507 ms (0.14%); N = 14, StdDev = 1.3122 ms
+Min = 249.0613 ms, Q1 = 249.6245 ms, Median = 250.5473 ms, Q3 = 251.7759 ms, Max = 253.1701 ms
+IQR = 2.1514 ms, LowerFence = 246.3975 ms, UpperFence = 255.0030 ms
+ConfidenceInterval = [249.2508 ms; 252.2113 ms] (CI 99.9%), Margin = 1.4802 ms (0.59% of Mean)
+Skewness = 0.43, Kurtosis = 1.73, MValue = 2
+
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\CSharpBenchmarks.AnyArrayVsListAccessMethods-report.csv
+  BenchmarkDotNet.Artifacts\results\CSharpBenchmarks.AnyArrayVsListAccessMethods-report-github.md
+  BenchmarkDotNet.Artifacts\results\CSharpBenchmarks.AnyArrayVsListAccessMethods-report.html
+
+// * Detailed results *
+AnyArrayVsListAccessMethods.ForAnyCacheArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 32.4226 ms, StdErr = 0.0320 ms (0.10%); N = 15, StdDev = 0.1238 ms
+Min = 32.2433 ms, Q1 = 32.3070 ms, Median = 32.3979 ms, Q3 = 32.5298 ms, Max = 32.6378 ms
+IQR = 0.2228 ms, LowerFence = 31.9729 ms, UpperFence = 32.8639 ms
+ConfidenceInterval = [32.2902 ms; 32.5550 ms] (CI 99.9%), Margin = 0.1324 ms (0.41% of Mean)
+Skewness = 0.3, Kurtosis = 1.77, MValue = 2
+-------------------- Histogram --------------------
+[32.199 ms ; 32.682 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+AnyArrayVsListAccessMethods.ForEachAnyArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 32.4689 ms, StdErr = 0.0258 ms (0.08%); N = 14, StdDev = 0.0964 ms
+Min = 32.3042 ms, Q1 = 32.4204 ms, Median = 32.4662 ms, Q3 = 32.5044 ms, Max = 32.6602 ms
+IQR = 0.0840 ms, LowerFence = 32.2945 ms, UpperFence = 32.6303 ms
+ConfidenceInterval = [32.3601 ms; 32.5777 ms] (CI 99.9%), Margin = 0.1088 ms (0.33% of Mean)
+Skewness = 0.3, Kurtosis = 2.26, MValue = 2
+-------------------- Histogram --------------------
+[32.269 ms ; 32.695 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+AnyArrayVsListAccessMethods.ForAnyArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 41.5742 ms, StdErr = 0.0399 ms (0.10%); N = 15, StdDev = 0.1546 ms
+Min = 41.3877 ms, Q1 = 41.4455 ms, Median = 41.5319 ms, Q3 = 41.6892 ms, Max = 41.8505 ms
+IQR = 0.2437 ms, LowerFence = 41.0800 ms, UpperFence = 42.0548 ms
+ConfidenceInterval = [41.4089 ms; 41.7395 ms] (CI 99.9%), Margin = 0.1653 ms (0.40% of Mean)
+Skewness = 0.61, Kurtosis = 1.84, MValue = 2
+-------------------- Histogram --------------------
+[41.333 ms ; 41.905 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+AnyArrayVsListAccessMethods.ForAnyCacheList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 48.7922 ms, StdErr = 0.0527 ms (0.11%); N = 13, StdDev = 0.1900 ms
+Min = 48.6174 ms, Q1 = 48.6881 ms, Median = 48.7067 ms, Q3 = 48.8343 ms, Max = 49.2733 ms
+IQR = 0.1462 ms, LowerFence = 48.4688 ms, UpperFence = 49.0537 ms
+ConfidenceInterval = [48.5647 ms; 49.0197 ms] (CI 99.9%), Margin = 0.2275 ms (0.47% of Mean)
+Skewness = 1.47, Kurtosis = 3.85, MValue = 2
+-------------------- Histogram --------------------
+[48.547 ms ; 49.344 ms) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+AnyArrayVsListAccessMethods.ForAnyList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 84.0194 ms, StdErr = 0.0779 ms (0.09%); N = 15, StdDev = 0.3018 ms
+Min = 83.4245 ms, Q1 = 83.7252 ms, Median = 84.0626 ms, Q3 = 84.3553 ms, Max = 84.3957 ms
+IQR = 0.6301 ms, LowerFence = 82.7801 ms, UpperFence = 85.3005 ms
+ConfidenceInterval = [83.6968 ms; 84.3420 ms] (CI 99.9%), Margin = 0.3226 ms (0.38% of Mean)
+Skewness = -0.35, Kurtosis = 1.85, MValue = 2
+-------------------- Histogram --------------------
+[83.317 ms ; 84.503 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+AnyArrayVsListAccessMethods.ForEachAnyList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 250.7310 ms, StdErr = 0.3507 ms (0.14%); N = 14, StdDev = 1.3122 ms
+Min = 249.0613 ms, Q1 = 249.6245 ms, Median = 250.5473 ms, Q3 = 251.7759 ms, Max = 253.1701 ms
+IQR = 2.1514 ms, LowerFence = 246.3975 ms, UpperFence = 255.0030 ms
+ConfidenceInterval = [249.2508 ms; 252.2113 ms] (CI 99.9%), Margin = 1.4802 ms (0.59% of Mean)
+Skewness = 0.43, Kurtosis = 1.73, MValue = 2
+-------------------- Histogram --------------------
+[248.585 ms ; 253.646 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+AnyArrayVsListAccessMethods.LinqAnyArray: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 533.6506 ms, StdErr = 0.5722 ms (0.11%); N = 15, StdDev = 2.2161 ms
+Min = 530.5386 ms, Q1 = 531.7981 ms, Median = 533.8081 ms, Q3 = 535.1186 ms, Max = 537.4846 ms
+IQR = 3.3205 ms, LowerFence = 526.8174 ms, UpperFence = 540.0994 ms
+ConfidenceInterval = [531.2815 ms; 536.0197 ms] (CI 99.9%), Margin = 2.3691 ms (0.44% of Mean)
+Skewness = 0.14, Kurtosis = 1.56, MValue = 2
+-------------------- Histogram --------------------
+[529.752 ms ; 538.271 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+AnyArrayVsListAccessMethods.LinqAnyList: Job-XZCOKH(Jit=RyuJit, Platform=X64, Server=True)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 807.3893 ms, StdErr = 0.9695 ms (0.12%); N = 14, StdDev = 3.6277 ms
+Min = 803.1268 ms, Q1 = 805.0327 ms, Median = 805.8823 ms, Q3 = 809.1768 ms, Max = 815.7747 ms
+IQR = 4.1441 ms, LowerFence = 798.8166 ms, UpperFence = 815.3930 ms
+ConfidenceInterval = [803.2970 ms; 811.4815 ms] (CI 99.9%), Margin = 4.0923 ms (0.51% of Mean)
+Skewness = 0.87, Kurtosis = 2.65, MValue = 2
+-------------------- Histogram --------------------
+[801.810 ms ; 817.092 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.11.5, OS=Windows 10.0.17134.706 (1803/April2018Update/Redstone4)
+Intel Core i7-5820K CPU 3.30GHz (Broadwell), 1 CPU, 12 logical and 6 physical cores
+.NET Core SDK=2.2.105
+  [Host]     : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+  Job-XZCOKH : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+
+Jit=RyuJit  Platform=X64  Server=True  
+
+|           Method |      Mean |     Error |    StdDev | Ratio | RatioSD |
+|----------------- |----------:|----------:|----------:|------:|--------:|
+| ForAnyCacheArray |  32.42 ms | 0.1324 ms | 0.1238 ms |  1.00 |    0.00 |
+|  ForEachAnyArray |  32.47 ms | 0.1088 ms | 0.0964 ms |  1.00 |    0.01 |
+|      ForAnyArray |  41.57 ms | 0.1653 ms | 0.1546 ms |  1.28 |    0.01 |
+|  ForAnyCacheList |  48.79 ms | 0.2275 ms | 0.1900 ms |  1.50 |    0.01 |
+|       ForAnyList |  84.02 ms | 0.3226 ms | 0.3018 ms |  2.59 |    0.01 |
+|   ForEachAnyList | 250.73 ms | 1.4802 ms | 1.3122 ms |  7.73 |    0.04 |
+|     LinqAnyArray | 533.65 ms | 2.3691 ms | 2.2161 ms | 16.46 |    0.10 |
+|      LinqAnyList | 807.39 ms | 4.0923 ms | 3.6277 ms | 24.90 |    0.12 |
+
+// * Hints *
+Outliers
+  AnyArrayVsListAccessMethods.ForEachAnyArray: Jit=RyuJit, Platform=X64, Server=True -> 1 outlier  was  removed (33.44 ms)
+  AnyArrayVsListAccessMethods.ForAnyCacheList: Jit=RyuJit, Platform=X64, Server=True -> 2 outliers were removed (50.15 ms, 51.05 ms)
+  AnyArrayVsListAccessMethods.ForEachAnyList: Jit=RyuJit, Platform=X64, Server=True  -> 1 outlier  was  removed (285.81 ms)
+  AnyArrayVsListAccessMethods.LinqAnyList: Jit=RyuJit, Platform=X64, Server=True     -> 1 outlier  was  removed (820.02 ms)
+
+// * Legends *
+  Mean    : Arithmetic mean of all measurements
+  Error   : Half of 99.9% confidence interval
+  StdDev  : Standard deviation of all measurements
+  Ratio   : Mean of the ratio distribution ([Current]/[Baseline])
+  RatioSD : Standard deviation of the ratio distribution ([Current]/[Baseline])
+  1 ms    : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:02:04 (124.49 sec), executed benchmarks: 8
+
+Global total time: 00:02:09 (129.92 sec), executed benchmarks: 8
+// * Artifacts cleanup *

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Linq;
-using System.Reflection;
+﻿using System.Reflection;
+using System.Text;
+using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace CSharpBenchmarks
 {
@@ -12,38 +10,23 @@ namespace CSharpBenchmarks
     {
         public static void Main()
         {
-            BenchmarkRunner.Run<ListAccessMethods>();
-            //BenchmarkRunner.Run<Array2AccessMethods>();
-            //BenchmarkRunner.Run(Assembly.GetExecutingAssembly());
-        }
-    }
-
-    public static class FastLinq
-    {
-        public static bool All<T>(this IList<T> list, Func<T, bool> func)
-        {
-            for (int i = 0; i < list.Count; i++)
-            {
-                if (!func(list[i]))
+            CollectionTestsSettings.ArrayLength = 1024;
+            CollectionTestsSettings.ArrayLoops = 60_000;
+            BenchmarkRunner.Run(Assembly.GetExecutingAssembly() ,DefaultConfig.Instance.With(Encoding.UTF8
+            ).With(new Job("ID", new GcMode
                 {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
-        public static bool Any<T>(this IList<T> list, Func<T, bool> func)
-        {
-            for (int i = 0; i < list.Count; i++)
-            {
-                if (func(list[i]))
-                {
-                    return true;
-                }
-            }
-
-            return false;
+                    Server = true
+                }).WithGcServer(true)
+                .WithInvocationCount(1)
+                .WithIterationCount(1)
+                .WithLaunchCount(1)
+                .WithWarmupCount(1)
+                .WithMinInvokeCount(1)
+                .WithMinIterationCount(1)
+                .WithMinWarmupCount(1)
+                .WithMaxIterationCount(2)
+                .WithMaxWarmupCount(2)
+                .WithUnrollFactor(1)));
         }
     }
 }

@@ -1,0 +1,440 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 7 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd
+// command took 2,03s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd
+// command took 12,74s and exited with 1
+// start dotnet build -c Release  --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd
+// command took 3,02s and exited with 0
+// ***** Done, took 00:00:17 (17.96 sec)   *****
+// Found 7 benchmarks:
+//   ListAccessMethods.ForSumCache: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+//   ListAccessMethods.ForSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+//   ListAccessMethods.ForEachSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+//   ListAccessMethods.LinqAggregateSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+//   ListAccessMethods.LinqSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+//   ListAccessMethods.LinqAll: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+//   ListAccessMethods.LinqAny: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)// **************************
+// Benchmark: ListAccessMethods.ForSumCache: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7c891a5-c16c-4a49-837e-dfd541d1bacd.dll" --benchmarkName "CSharpBenchmarks.ListAccessMethods.ForSumCache" --job "ID" --benchmarkId 0 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 485100.00 ns, 485.1000 us/op
+WorkloadJitting  1: 1 op, 489728400.00 ns, 489.7284 ms/op
+
+OverheadWarmup   1: 1 op, 5500.00 ns, 5.5000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 300.00 ns, 300.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 489688000.00 ns, 489.6880 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 489967300.00 ns, 489.9673 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 489967050.00 ns, 489.9671 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 489.9671 ms, StdErr = 0.0000 ms (0.00%); N = 1, StdDev = 0.0000 ms
+Min = 489.9671 ms, Q1 = 489.9671 ms, Median = 489.9671 ms, Q3 = 489.9671 ms, Max = 489.9671 ms
+IQR = 0.0000 ms, LowerFence = 489.9671 ms, UpperFence = 489.9671 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ListAccessMethods.ForSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7c891a5-c16c-4a49-837e-dfd541d1bacd.dll" --benchmarkName "CSharpBenchmarks.ListAccessMethods.ForSum" --job "ID" --benchmarkId 1 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 455900.00 ns, 455.9000 us/op
+WorkloadJitting  1: 1 op, 724009700.00 ns, 724.0097 ms/op
+
+OverheadWarmup   1: 1 op, 3800.00 ns, 3.8000 us/op
+OverheadWarmup   2: 1 op, 1700.00 ns, 1.7000 us/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   7: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 731197400.00 ns, 731.1974 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 725553400.00 ns, 725.5534 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 725553100.00 ns, 725.5531 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 725.5531 ms, StdErr = 0.0000 ms (0.00%); N = 1, StdDev = 0.0000 ms
+Min = 725.5531 ms, Q1 = 725.5531 ms, Median = 725.5531 ms, Q3 = 725.5531 ms, Max = 725.5531 ms
+IQR = 0.0000 ms, LowerFence = 725.5531 ms, UpperFence = 725.5531 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ListAccessMethods.ForEachSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7c891a5-c16c-4a49-837e-dfd541d1bacd.dll" --benchmarkName "CSharpBenchmarks.ListAccessMethods.ForEachSum" --job "ID" --benchmarkId 2 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 426400.00 ns, 426.4000 us/op
+WorkloadJitting  1: 1 op, 1994286800.00 ns, 1.9943 s/op
+
+OverheadWarmup   1: 1 op, 4300.00 ns, 4.3000 us/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 300.00 ns, 300.0000 ns/op
+
+OverheadActual   1: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 2001059800.00 ns, 2.0011 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1994255300.00 ns, 1.9943 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1994255000.00 ns, 1.9943 s/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 1.9943 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 1.9943 s, Q1 = 1.9943 s, Median = 1.9943 s, Q3 = 1.9943 s, Max = 1.9943 s
+IQR = 0.0000 s, LowerFence = 1.9943 s, UpperFence = 1.9943 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ListAccessMethods.LinqAggregateSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7c891a5-c16c-4a49-837e-dfd541d1bacd.dll" --benchmarkName "CSharpBenchmarks.ListAccessMethods.LinqAggregateSum" --job "ID" --benchmarkId 3 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 448000.00 ns, 448.0000 us/op
+WorkloadJitting  1: 1 op, 5643534600.00 ns, 5.6435 s/op
+
+OverheadWarmup   1: 1 op, 3300.00 ns, 3.3000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 500.00 ns, 500.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 5667545100.00 ns, 5.6675 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 5654538800.00 ns, 5.6545 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 5654538550.00 ns, 5.6545 s/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 5.6545 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 5.6545 s, Q1 = 5.6545 s, Median = 5.6545 s, Q3 = 5.6545 s, Max = 5.6545 s
+IQR = 0.0000 s, LowerFence = 5.6545 s, UpperFence = 5.6545 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ListAccessMethods.LinqSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7c891a5-c16c-4a49-837e-dfd541d1bacd.dll" --benchmarkName "CSharpBenchmarks.ListAccessMethods.LinqSum" --job "ID" --benchmarkId 4 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 460700.00 ns, 460.7000 us/op
+WorkloadJitting  1: 1 op, 6669809900.00 ns, 6.6698 s/op
+
+OverheadWarmup   1: 1 op, 5700.00 ns, 5.7000 us/op
+OverheadWarmup   2: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 300.00 ns, 300.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 6610377800.00 ns, 6.6104 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 6550863900.00 ns, 6.5509 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 6550863650.00 ns, 6.5509 s/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 6.5509 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 6.5509 s, Q1 = 6.5509 s, Median = 6.5509 s, Q3 = 6.5509 s, Max = 6.5509 s
+IQR = 0.0000 s, LowerFence = 6.5509 s, UpperFence = 6.5509 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ListAccessMethods.LinqAll: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7c891a5-c16c-4a49-837e-dfd541d1bacd.dll" --benchmarkName "CSharpBenchmarks.ListAccessMethods.LinqAll" --job "ID" --benchmarkId 5 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 430700.00 ns, 430.7000 us/op
+WorkloadJitting  1: 1 op, 6482982600.00 ns, 6.4830 s/op
+
+OverheadWarmup   1: 1 op, 3900.00 ns, 3.9000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   8: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 6464098400.00 ns, 6.4641 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 6479279800.00 ns, 6.4793 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 6479279550.00 ns, 6.4793 s/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 6.4793 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 6.4793 s, Q1 = 6.4793 s, Median = 6.4793 s, Q3 = 6.4793 s, Max = 6.4793 s
+IQR = 0.0000 s, LowerFence = 6.4793 s, UpperFence = 6.4793 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: ListAccessMethods.LinqAny: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d7c891a5-c16c-4a49-837e-dfd541d1bacd.dll" --benchmarkName "CSharpBenchmarks.ListAccessMethods.LinqAny" --job "ID" --benchmarkId 6 in E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\d7c891a5-c16c-4a49-837e-dfd541d1bacd\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 420000.00 ns, 420.0000 us/op
+WorkloadJitting  1: 1 op, 6426642400.00 ns, 6.4266 s/op
+
+OverheadWarmup   1: 1 op, 4400.00 ns, 4.4000 us/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   5: 1 op, 1900.00 ns, 1.9000 us/op
+OverheadWarmup   6: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   8: 1 op, 500.00 ns, 500.0000 ns/op
+
+OverheadActual   1: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   2: 1 op, 400.00 ns, 400.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 6439360200.00 ns, 6.4394 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 6418896600.00 ns, 6.4189 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 6418896200.00 ns, 6.4189 s/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 6.4189 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 6.4189 s, Q1 = 6.4189 s, Median = 6.4189 s, Q3 = 6.4189 s, Max = 6.4189 s
+IQR = 0.0000 s, LowerFence = 6.4189 s, UpperFence = 6.4189 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\CSharpBenchmarks.ListAccessMethods-report.csv
+  BenchmarkDotNet.Artifacts\results\CSharpBenchmarks.ListAccessMethods-report-github.md
+  BenchmarkDotNet.Artifacts\results\CSharpBenchmarks.ListAccessMethods-report.html
+
+// * Detailed results *
+ListAccessMethods.ForSumCache: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 489.9671 ms, StdErr = 0.0000 ms (0.00%); N = 1, StdDev = 0.0000 ms
+Min = 489.9671 ms, Q1 = 489.9671 ms, Median = 489.9671 ms, Q3 = 489.9671 ms, Max = 489.9671 ms
+IQR = 0.0000 ms, LowerFence = 489.9671 ms, UpperFence = 489.9671 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[489.967 ms ; 489.967 ms) | @
+---------------------------------------------------
+
+ListAccessMethods.ForSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 725.5531 ms, StdErr = 0.0000 ms (0.00%); N = 1, StdDev = 0.0000 ms
+Min = 725.5531 ms, Q1 = 725.5531 ms, Median = 725.5531 ms, Q3 = 725.5531 ms, Max = 725.5531 ms
+IQR = 0.0000 ms, LowerFence = 725.5531 ms, UpperFence = 725.5531 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[725.553 ms ; 725.553 ms) | @
+---------------------------------------------------
+
+ListAccessMethods.ForEachSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 1.9943 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 1.9943 s, Q1 = 1.9943 s, Median = 1.9943 s, Q3 = 1.9943 s, Max = 1.9943 s
+IQR = 0.0000 s, LowerFence = 1.9943 s, UpperFence = 1.9943 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[1.994 s ; 1.994 s) | @
+---------------------------------------------------
+
+ListAccessMethods.LinqAggregateSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 5.6545 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 5.6545 s, Q1 = 5.6545 s, Median = 5.6545 s, Q3 = 5.6545 s, Max = 5.6545 s
+IQR = 0.0000 s, LowerFence = 5.6545 s, UpperFence = 5.6545 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[5.655 s ; 5.655 s) | @
+---------------------------------------------------
+
+ListAccessMethods.LinqSum: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 6.5509 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 6.5509 s, Q1 = 6.5509 s, Median = 6.5509 s, Q3 = 6.5509 s, Max = 6.5509 s
+IQR = 0.0000 s, LowerFence = 6.5509 s, UpperFence = 6.5509 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[6.551 s ; 6.551 s) | @
+---------------------------------------------------
+
+ListAccessMethods.LinqAll: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 6.4793 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 6.4793 s, Q1 = 6.4793 s, Median = 6.4793 s, Q3 = 6.4793 s, Max = 6.4793 s
+IQR = 0.0000 s, LowerFence = 6.4793 s, UpperFence = 6.4793 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[6.479 s ; 6.479 s) | @
+---------------------------------------------------
+
+ListAccessMethods.LinqAny: ID(MinInvokeCount=1, Server=True, InvocationCount=1, IterationCount=1, LaunchCount=1, MaxIterationCount=2, MaxWarmupIterationCount=2, MinIterationCount=1, MinWarmupIterationCount=1, UnrollFactor=1, WarmupCount=1)
+Runtime = .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 6.4189 s, StdErr = 0.0000 s (0.00%); N = 1, StdDev = 0.0000 s
+Min = 6.4189 s, Q1 = 6.4189 s, Median = 6.4189 s, Q3 = 6.4189 s, Max = 6.4189 s
+IQR = 0.0000 s, LowerFence = 6.4189 s, UpperFence = 6.4189 s
+ConfidenceInterval = [NaN s; NaN s] (CI 99.9%), Margin = NaN s (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[6.419 s ; 6.419 s) | @
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.11.5, OS=Windows 10.0.17134.706 (1803/April2018Update/Redstone4)
+Intel Core i7-5820K CPU 3.30GHz (Broadwell), 1 CPU, 12 logical and 6 physical cores
+.NET Core SDK=2.2.105
+  [Host] : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+  ID     : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+
+Job=ID  MinInvokeCount=1  Server=True  
+InvocationCount=1  IterationCount=1  LaunchCount=1  
+MaxIterationCount=2  MaxWarmupIterationCount=2  MinIterationCount=1  
+MinWarmupIterationCount=1  UnrollFactor=1  WarmupCount=1  
+
+|           Method |       Mean | Error | Ratio |
+|----------------- |-----------:|------:|------:|
+|      ForSumCache |   490.0 ms |    NA |  1.00 |
+|           ForSum |   725.6 ms |    NA |  1.48 |
+|       ForEachSum | 1,994.3 ms |    NA |  4.07 |
+| LinqAggregateSum | 5,654.5 ms |    NA | 11.54 |
+|          LinqSum | 6,550.9 ms |    NA | 13.37 |
+|          LinqAll | 6,479.3 ms |    NA | 13.22 |
+|          LinqAny | 6,418.9 ms |    NA | 13.10 |
+
+// * Legends *
+  Mean  : Arithmetic mean of all measurements
+  Error : Half of 99.9% confidence interval
+  Ratio : Mean of the ratio distribution ([Current]/[Baseline])
+  1 ms  : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:01:28 (88.12 sec), executed benchmarks: 7
+
+Global total time: 00:01:46 (106.09 sec), executed benchmarks: 7
+// * Artifacts cleanup *

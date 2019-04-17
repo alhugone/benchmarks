@@ -8,4 +8,4 @@ E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\CS
 E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\bin\Release\netcoreapp2.2\CSharpBenchmarks.pdb
 E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.dll
 E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.pdb
-E:\git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.csprojAssemblyReference.cache
+E:\Git\benchmarks\CSharpBenchmarks\CSharpBenchmarks\obj\Release\netcoreapp2.2\CSharpBenchmarks.csprojAssemblyReference.cache

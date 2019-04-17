@@ -2,6 +2,7 @@
 {
     public class SomeClass
     {
-        public int Field;
+        public SomeClass(int filed) => Field = filed;
+        public int Field { get; }
     }
 }
